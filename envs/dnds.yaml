@@ -1,0 +1,12 @@
+# Conda environment file for dn_ds analysis
+# This file is used to create a conda environment for dn_ds analysis
+# It includes the necessary dependencies and channels
+# to install the required packages
+name: dnds
+channels: [bioconda, conda-forge]
+dependencies:
+  - python=3.10
+  - requests
+  - mafft            # alinhamento de proteínas
+  - pal2nal          # retro‑tradução p/ códons
+  - biopython        # utilidades Python

@@ -1,0 +1,54 @@
+#######################################
+# Snakefile for Dn/Ds analysis        #
+#                                     #   
+# Config and parameters               #
+######################################
+
+import yaml, os, textwrap
+
+configfile: "config.yaml"
+
+THREADS_MAFFT = int(config['threads_mafft'])
+THREADS_TOTAL = int(config['threads_total'])
+GENES_TSV = config['genes_file']
+
+GENE_IDS = [ line.split("\t")[2].strip()
+            for line in open(GENES_TSV).read().splitlines()[1:] ]
+
+########################################
+# RULES
+########################################
+
+rule all:
+    input:
+        expand("results/dnds/{gene}.txt", gene=GENE_IDS),
+        "results/dnds/summary.tsv"
+
+########################################
+# 1 - Fetch CDS sequences
+########################################
+rule fetch_cds:
+    input: GENES_TSV
+    output: "data/raw_cds/{gene}.fasta"
+    threads: 1
+    conda: "envs/dnds.yaml"
+    shell: "python src/01_fetch_cds.py {wildcards.gene} {output}"
+
+########################################
+# 2 - Align protein sequences
+########################################
+rule mafft: 
+    input: "data/raw_cds/{gene}.fasta"
+    output: "data/align_prot/{gene}.fasta"
+    threads: THREADS_MAFFT
+    conda: "envs/dnds.yaml"
+    shell:
+        """
+        mafft --auto --thread {threads} {input} > {output}
+        """
+
+#########################################
+# 3 - Align CDS sequences
+#########################################
+
+

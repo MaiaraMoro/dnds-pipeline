@@ -1,12 +1,34 @@
 import requests
 import os
+import csv
 import sys
 from pathlib import Path
-from utils import load_genes_dict
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 
 # Ensembl database version: 113 
+
+def load_genes2(genes_file):
+    """ 
+    Load genes from a file and return a list of tuples (ensembl_id, gene_name).
+
+    The file should contain one gene per line in the format:
+    <Gene name>	<Ensembl Canonical>	<Gene stable ID>
+
+    Third column is human ensembl gene ID.
+    """
+
+    genes = []
+
+    with open(genes_file, 'r', encoding='utf-8') as f:
+
+        reader = csv.DictReader(f, delimiter='\t')
+        for row in reader:
+            gene_name = row['Gene name'].strip()
+            ensembl_id = row['Gene stable ID'].strip()
+            genes.append((ensembl_id, gene_name))
+
+    return genes
 
 def load_species(species_file):
     """
@@ -92,7 +114,7 @@ def get_all_orthologs_cds(symbol,
     return results
 
 
-def save_as_fasta(gene_name, species_seq_dict, output_file):
+def save_as_fasta(gene_name, species_seq_dict, outdir = "fasta_output"):
     """ 
     Save the sequences in FASTA format.
     The file name will be <gene_name>.fasta and
@@ -102,48 +124,57 @@ def save_as_fasta(gene_name, species_seq_dict, output_file):
     \t
 
     """
+
+    os.makedirs(outdir, exist_ok=True)
+
+    output_file = os.path.join(outdir, f"{gene_name}.fasta")
+
     with open(output_file, 'w', encoding='utf-8') as f:
         for species, (seq,ensembl_id) in species_seq_dict.items():
             header = f"{ensembl_id}|{species}"
             f.write(f">{header}\n")
             f.write(f"{seq}\n")
     
+    print(f"Saved {len(species_seq_dict)} sequences for {gene_name} to {output_file}")
+    
+def main(): 
+    genes_file = ROOT_DIR / "data" / "genes" / "genes.tsv" # Path to the file containing genes
+    species_file = ROOT_DIR / "data" / "species" / "mammals.txt" # Path to the file containing species
+    
+    gene_list = load_genes2(genes_file)
+
+    if os.path.exists(species_file):
+        species_set = load_species(species_file)
+        print(f"Loaded {len(species_set)} species from {species_file}")
+    else:
+        species_set = None
+        print(f"Species file {species_file} not found. Skipping species filtering.")
+    
+    outdir = ROOT_DIR / "data" / "raw_cds"
+    os.makedirs(outdir, exist_ok=True)
+
+
+    # for each gene, get the orthologs and save them in FASTA format
+    for ensembl_id, gene_name in gene_list:
+        print(f"Processing gene {gene_name} with Ensembl ID {ensembl_id}")
+        orthologs = get_all_orthologs_cds(gene_name)
+        
+        if not orthologs:
+            print(f"No orthologs found for {gene_name}")
+            continue
+        if species_set:
+            # Filter orthologs by species
+            orthologs = {sp: seq for sp, seq in orthologs.items() if sp in species_set}
+            print(f"Filtered to {len(orthologs)} orthologs for {gene_name} based on species set")
+        else:
+            print(f"No desired species found for {gene_name}")
+            continue
+
+        # Save the orthologs in FASTA format
+        save_as_fasta(gene_name, orthologs, outdir)
+
 if __name__ == "__main__":
-    gene_symbol = sys.argv[1] # gene name
-    out_path = sys.argv[2] # output path
-
-    genes_file = ROOT_DIR / "data" / "genes" / "genes.tsv"
-    species_file = ROOT_DIR / "data" / "species" / "mammals.txt"
-
-
-    genes_dict = load_genes_dict(genes_file)
-    if gene_symbol not in genes_dict:
-        print(f"Gene {gene_symbol} not found in the gene list.")
-        Path(out_path).write_text("")
-        sys.exit(0)
-    
-    ensembl_id = genes_dict[gene_symbol]
-    species_set = load_species(species_file)
-
-    print(f"Fetching sequences for {gene_symbol}...")
-    seqs = get_all_orthologs_cds(gene_symbol)
-
-    if not seqs:
-        print(f"Any 1:1 orthologs found for {gene_symbol}")
-        Path(out_path).write_text("")
-        sys.exit(0)
-    
-    if species_set:
-        seqs = {sp: seq for sp, seq in seqs.items() if sp in species_set}
-        if not seqs:
-            print(f"Any orthologs found for {gene_symbol} in the species list")
-            Path(out_path).write_text("")
-            sys.exit(0)
-            
-    os.makedirs(Path(out_path).parent, exist_ok=True)
-    save_as_fasta(gene_symbol, seqs, out_path)
-    print(f"Saved {len(seqs)} sequences for {gene_symbol} to {out_path}")
-
+    main()
 
 
 

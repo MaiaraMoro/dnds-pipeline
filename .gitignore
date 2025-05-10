@@ -3,3 +3,5 @@
 pre-analysis/
 notebooks/
 data/
+.snakemake/
+__pycache__/

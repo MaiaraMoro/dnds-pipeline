@@ -5,15 +5,16 @@
 ######################################
 
 import yaml, os, textwrap
+import sys
+from pathlib import Path
+from utils.load_gene_file import load_gene_names
 
 configfile: "config.yaml"
 
 THREADS_MAFFT = int(config['threads_mafft'])
 THREADS_TOTAL = int(config['threads_total'])
 GENES_TSV = config['genes_file']
-
-GENE_IDS = [ line.split("\t")[2].strip()
-            for line in open(GENES_TSV).read().splitlines()[1:] ]
+GENE_IDS = load_gene_names(GENES_TSV)
 
 ########################################
 # RULES
@@ -28,7 +29,6 @@ rule all:
 # 1 - Fetch CDS sequences
 ########################################
 rule fetch_cds:
-    input: GENES_TSV
     output: "data/raw_cds/{gene}.fasta"
     threads: 1
     conda: "envs/dnds.yaml"

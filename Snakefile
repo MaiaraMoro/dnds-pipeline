@@ -35,16 +35,16 @@ rule fetch_cds:
     shell: "python src/01_fetch_cds.py {wildcards.gene} {output}"
 
 ########################################
-# 2 - Align protein sequences
+# 2 - Align protein sequences (MAFFT)
 ########################################
-rule mafft: 
+rule align_protein: 
     input: "data/raw_cds/{gene}.fasta"
     output: "data/align_prot/{gene}.fasta"
     threads: THREADS_MAFFT
     conda: "envs/dnds.yaml"
     shell:
         """
-        mafft --auto --thread {threads} {input} > {output}
+        python src/02_align_protein.py {input} {output} {threads}
         """
 
 #########################################

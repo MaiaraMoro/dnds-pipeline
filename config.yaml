@@ -1,4 +1,4 @@
-threads_mafft: 2    
+threads_mafft: 4    
 threads_total: 8
 genes_file:   "data/genes/genes.tsv"
 species_file: "data/species/mammals.txt"

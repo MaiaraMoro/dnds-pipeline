@@ -35,7 +35,16 @@ rule fetch_cds:
     shell: "python src/01_fetch_cds.py {wildcards.gene} {output}"
 
 ########################################
-# 2 - Align protein sequences (MAFFT)
+# 2 - Translate CDS to protein sequences
+########################################
+rule translate_cds:
+    input: "data/raw_cds/{gene}.fasta"
+    output: "data/raw_prot/{gene}.fasta"
+    conda: "envs/dnds.yaml"
+    shell: "python src/02_translate_cds.py {input} {output}       "
+
+########################################
+# 3 - Align protein sequences (MAFFT)
 ########################################
 rule align_protein: 
     input: "data/raw_cds/{gene}.fasta"

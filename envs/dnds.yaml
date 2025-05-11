@@ -5,8 +5,9 @@ channels: [bioconda, conda-forge]
 dependencies:
   - python=3.10
   - requests
+  - biopython  
   - mafft 
   - perl           
   - pal2nal          
-  - biopython        
+  - iqtree
   

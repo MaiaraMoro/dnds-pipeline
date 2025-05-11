@@ -73,3 +73,68 @@ rule pal2nal:
     shell: """pal2nal.pl {input.protein} {input.cds} -output fasta -nogap > {output}""".format(input=input, output=output)
 
 ######################################################
+# 5 - Maximum likelihood tree IQTREE
+######################################################
+rule build_tree:
+    input: "data/align_codon/{gene}.fasta"
+    output: "results/trees/{gene}.treefile"
+    threads: THREADS_TOTAL
+    conda: "envs/dnds.yaml"
+    shell: """iqtree2 -s {input} -st CODON -m MFP -T {threads} -nt AUTO -pre data/trees/{wildcards.gene}"""
+
+######################################################
+# 6 - Convert FASTA to PHYLIP
+######################################################
+rule fasta_to_phylip:
+    input: "data/align_codon/{gene}.fasta"
+    output: "data/align_codon_phylip/{gene}.phy"
+    conda: "envs/dnds.yaml"
+    shell: """python src/03_fasta_to_phylip.py {input} {output}"""
+
+######################################################
+# 7 - Generate codeml.ctl for PAML
+######################################################
+rule generate_ctl:
+    input: 
+        aln = "data/align_codon_phylip/{gene}.phy",
+        tree = "results/trees/{gene}.treefile"
+    output: 
+        ctl = "results/paml/{gene}/{gene}.ctl"
+    run:
+        os.makedirs(f"results/paml/{wildcards.gene}", exist_ok=True)
+        with open(output.ctl, 'w') as ctl:
+            ctl.write(textwrap.dedent(f"""
+                seqfile = {os.path.abspath(input.aln)}
+                treefile = {os.path.abspath(input.tree)}
+                outfile = mlc
+
+                noisy = 9
+                verbose = 1
+                runmode = 0
+
+                seqtype = 1
+                CodonFreq = 2
+
+                model = 0
+                NSsites = 7 8
+                icode = 0
+                fix_kappa = 0
+                kappa = 2
+                fix_omega = 0
+                omega = 1
+            """))
+
+######################################################
+# 8 - Run codeml
+######################################################
+rule run_codeml:
+    input:
+        ctl = "results/paml/{gene}/codeml.ctl"
+    output:
+        out = "results/paml/{gene}/mlc"
+    conda:
+        "envs/paml.yaml"
+    shell:
+        """
+        cd results/paml/{wildcards.gene} && codeml codeml.ctl
+        """

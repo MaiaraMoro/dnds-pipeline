@@ -5,6 +5,8 @@ channels: [bioconda, conda-forge]
 dependencies:
   - python=3.10
   - requests
-  - mafft            # alinhamento de proteínas
-  - pal2nal          # retro‑tradução p/ códons
-  - biopython        # utilidades Python
+  - mafft 
+  - perl           
+  - pal2nal          
+  - biopython        
+  

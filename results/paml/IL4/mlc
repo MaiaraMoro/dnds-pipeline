@@ -1,0 +1,627 @@
+     25    306
+
+ENSG00000113520|homo_sapiens    ATG GGT CAA CTG CTT CCC CCT CTG TTC TTC CTG CTA GCA TGT GCC GGC AAC TTT GTC CAC GGA CAC AAG TGC GAT ACC TTA CAG GAG ATC ATC AAA ACT TTG AAC AGC CTC ACA GAG CAG AAG ACT CTG TGC ACC GAG TTG ACC GTA ACA GAC ATC TTT GCT AAC ACA ACT GAG AAG GAA TTC TGC AGG GCT GCG ACT GTG CTC CGG CAG TTC TAC AGC CAC CAT ATC CGA TTC CTG AAA CGG CTC GAC AGG AAC CTC TGG GGC CTG GCG GGC TTG CTA AAG ACG ATC ATG AGA GAG AAA TAT TCA 
+ENSNLEG00000012783|nomascus_leucogenys  ATG GGT CAG CTG CTT CCC CCT CTG TTC TTC CTG CTA GCA TGT GCC GGC AAC TTT GTC CAC GGA CAC AAC TGC GAT GCC TTA CAG GAG ATC ATC AAA ACT TTG AAC AGC CTC ACA GAG CAG AAG ACT CTG TGC ACC GAG TTG ACC GTA ACG GAC ATC TTT GCT AAC ACA ACT GAG AAG GAA TTC TGC AGG GCT GCG ACT GTG CTC CGG CAG TTC TAC AGC CAC CAT ATC GGA TTC CTG AAA CGG CTC GAC AGG AAC CTC TGC GGC CTG GCG GGC TTG CTA AAG ACG ATC ATG AGA GAG AAA TAT TCA 
+ENSGGOG00000005670|gorilla_gorilla  ATG GGT CAA CTG CTT CCC CCT CTG TTC TTC CTG CTA GCA TGT GTC GGC AAC TTT GTC CAC GGA CAC AAG TGC GAT GCC TTA CAG GAG ATC ATC AAA ACT TTG AAC AGC CTC ACA GAG CAG AAG ACT CTG TGC ACC GAG TTG ACC GTA ACG GAC ATC TTT GCT AAC ACA ACT GAG AAG GAA TTC TGC AGG GCT GCG ACT GTG CTC CGG CAG TTC TAC AGC CAC CAT ATT CGA TTC CTG AAA CGG CTC GAC AGG AAC CTC TGG GGC CTG GCG GGC TTG CTA AAG ACG ATC ATG AGA GAG AAA TAT TCA 
+ENSCJAG00000013083|callithrix_jacchus  ATG GGT CAA CTG CTT CCC GCT CTG TTC TTC CTG TTA GCA TGG GCC GGC AAC TTT GTC CAT GGA CAC AAC TGC GAT GCC TTA GAG GAG ATC ATC AAA ACT TTG AAC ATT GTC ACA GAG CAA AAG ACT CTG TGC ACC AAG TTG ACC ATA ATG GAC ATC TTT GCT AAC ACA ACT GAG AAG GAA TTC TGC AGG GCT GCG ACT GTG CTC CGG CAG TTC TAC AGC CAC CAT ATC CGA TCC CTA AAA CGG CTG GAC AGG AAC CTC TGC AGC CTG GCG GGC TTG CTA AAG ATG ATC ATG AAA GAG ATA TAT TCA 
+ENSMMUG00000003133|macaca_mulatta  ATG GGT CAA CTG CTT CCC CCT CTG TTC TTC CTG CTA GCA TGT GCC GGC AAC TTT GCC CAC GGA CAC AAC TGC CAT GCC TTA CGG GAG ATC ATC GAA ACT CTG AAC AGC CTC ACA GAG CAG AAG ACT CTG TGC ACC AAG TTG ACC ATA ACG GAC ATC CTT GCT AAC ACA ACT GAG AAG GAA TTC TGC AGG GCT GCG ACT GTG CTC CGG CAG TTC TAC AGC CAC CAT ATC CGA TTC CTG AAA CGG CTC GAC AGG AAC CTC TGG GGC CTG GCG GGC TTG CTA AAG ACG ATC ATG AAA GAG AAA TAT TCA 
+ENSPANG00000004677|papio_anubis  ATG GGT CAA CTG CTT CCC CCT CTG TTC TTC CTG CTA GCA TGT GCC GGC AAC TTT GCC CAC GGA CAC AAC TGC CAT GCC TTA CGG GAG ATC ATC GAA ACT CTG AAC AGC CTC ACA GAG CAG AAG ACT CTG TGC ACC AAG TTG ACC ATA ACG GAC ATC CTT GCT AAC ACA ACT GAG AAG GAA TTC TGC AGG GCT GCG ACT GTG CTC CGG CAG TTC TAC AGC CAC CAT ATC CGA TTC CTG AAA CGG CTC GAC AGG AAC CTC TGG GGC CTG GCG GGC TTG CTA AAG ACG ATC ATG AAA GAG AAA TAT TCA 
+ENSFCTG00005023586|felis_catus  ATG GAT CAA CTG ATT CCA GCT CTG GTC TGC TTA CTA GCA TTT ACC AGC ACC TTC GTC CAC GGC CAG AAC TTC AAT ACG TTG AAA GAG ATC ATC AAA ACG TTG AAC ATC CTC ACA GCG AGA AAC GTG AGT AAG ATA TCT GGC ACC ATC TCT GAT GTT CTG GTG AAC ACA AGT GAC AAG GAA TTC TGC AGA GCC ACA ACC GTG CTC CGG CAG ATC TAT ACA CAT CAC ACC AAA TTC CTC AAA GGA CTC GAC AGG AAC CTC AGC AGC ATG GCA AAC AGG CTA AAA GCG ATC ATG CAA AAG AAA TAC TCA 
+ENSOARG00020000164|ovis_aries_rambouillet  ATG GGT CAG CTG ATC CCA GCG CTG GTC TGC TTA CTG GTA TGT ACC AGC CAC TTC GTC CAT GGA CAC AAG TGT GAT ACC TTA GAA GAG ATC ATC AAA ACG CTG AAC ATC CTC ACA TCG AGA AAG AAT TCA TGC ATG GAG CTG CCT GTA GCA GAC GTC TTT GCT AAC GCA ACT GAG AAG GAA TTC TGC AGG GCT GGA ATT GAG CTT AGG CGT ATC TAC AGG AGC CAC AAC AAA TTC CTG GGC GGA CTT GAC AGG AAT CTC AGC AGC CTG GCA AGC AAG CTA AAG ACT ATT ATG AAG GAG AAA TAC TCA 
+ENSCAFG00845010991|canis_lupus_familiaris  ATG GGT CAA CTG ATT CCA ACT CTG GTC TGC TTA CTA GCA CTC ACC AGC ACC TTT GTC CAC GGA CAT AAC TTC AAT ACT ATT AAA GAG ATC ATC AAA ATG TTG AAC ATC CTC ACA GCG AGA AAC GAC TCG TGC ATG GAG CTG ACT GTC AAG GAC GTC TTC ACT AAC ACA AGC GAT AAG GAA TTC TGC AGA GCT GCT ACT GTA CTG CGG CAG ATC TAT ACA CAC AAC AAC AGA TAT CTC AGA GGA CTC TAC AGG AAC CTC AGC AGC ATG GCA AAC AAG CTA AAA GTG ATC ATG CAG AAG AAA TAC TAC 
+ENSBTAG00000015957|bos_taurus   ATG GGT CAG CTG ATC CCA GTG CTG GTC TGC TTA CTG GTA TGT ACC AGT CAC TTC GTC CAT GGA CAC AAG TGT GAT ACC TTA GCA GAG ATC ATC AAA ACG CTG AAC ATC CTC ACA ACG AGA AAG AAT TCA TGC ATG GAG CTG CCT GTA GCA GAC GTC TTT GCT AAC ACA ACT GAG AAG GAA TTC TGC AGG GTT GGA ATT GAG CTT AGG CGT ATC TAC AGG AGC CAC AAC AAA TTC CTG GGC GGA CTT GAC AGG AAT CTC AAC AGC TTG GCA AGC AAG CTA AAG ACG ATT ATG AAG GAG AAA TAC TCC 
+ENSMPUG00000010501|mustela_putorius_furo  ATG GGT CAA CTG ATT CCA ACT CTG GTC TGC TTA CTA GCA CTC ACC GGC ACT TTC ATC CAC GGA CAT AAC TTC AGT GCC ATT AAG GAG ATC ATC AAA ACG TTG AAC ATC CTC ACA GCG AGA AAC GAC TCA TGC ATG GAG CTG ACC GTC ACT GAA GTC TTC TCT AAC ACA AGT GAG AAG GAA TTC TGC AGA GCT GCA ACT GTG CTT CAG CAG CTC TCT ACA CAC AAT AAC AGA TTG CTC AGA GGA CTT CAC AGG AAC CTC AGG AAC ATG GCA AAC ATG CTA AAA GTG ATC ATG CAA CAG AAA TAC TAC 
+ENSMUSG00000000869|mus_musculus  ATG GGT CAG CTA GTT GTC ATC CTG CTC TTC TTT CTC GAA TGT ACC AGG AGC CAT ATC CAC GGA TGC GAC AAA AAT CAC TTG AGA GAG ATC ATC GGC ATT TTG AAC GAG GTC ACA GGA GAA GGG ACG CCA TGC ACG GAG ATG GAT GTG CCA AAC GTC CTC ACA AAC ACC ACA GAG AGT GAG GTC TGT AGG GCT TCC AAG GTG CTT CGC ATA TTT TAT TTA AAA CAT CTC ATG GAG CTG CAG AGA CTC TTT CGG GCT TTT CGA TGC CTG GAT TCA TCG CTA AAG AGC ATC ATG CAA ATG GAT TAC TCG 
+ENSRFEG00010017322|rhinolophus_ferrumequinum  ATG CAT CAA CTG ATC CCA GCT CTG GTC TGC CTA CTA GCA TGT ACC AGC AAC TGC CTC CAT GGA CGC GAG CTC ATC CTC TTA CAG GAG ATC ATC AAA ACA CTG AAC AAC CTC ACA GAG ACA AAG GAC CGG TAC ATG GAG CTG ACT GTA GCA GAA GTC TTG CCT AAC ACA ACT GAG AAG GAA TTC TGC AGG GCC GCA ATG GAG CTT CGG AAG ATC TAC CCC CCA CAC GGG AAA CAC CTG AGC AAA CTT GAC AGG AAC CTC AGC AGG TTG GCC AAC ATG GGG GAC ACC GTC GTA AAG ATA AGG CAG AGT 
+ENSCPOG00000031420|cavia_porcellus  ATG GGT CAG CTG ACG GTC ATT CTC TTC TGC CTC CTA GCA TGT GCC AGC GCC GTG GTC CGT GGG TGC AAC CAC CAC ACC TTG CAA GAA ATC ATC CAG CAC CTC AAC ACA CTC TCC AGG GAG AAG AGT CCC TGT GCC GAG CTG CTG GTC ACG GAC GTC TTT GCT GGT CCA GCC AGT GGG GAC CTG TGC ACA GCC GCG ACG GTG CTG CAC CAT ACA GCC TAC CTC CGG CCC AGC GTC CTG AGA CAA GTG TTC AGG AAC CTC AGG AGC ATG GCT CAG TCG CTA AAA AGG ATC ATG CAG AAG AGA TAT TCA 
+ENSMICG00000012471|microcebus_murinus  ATG GGT CAG ATG ATC CCT CCT CTG TTC TGC CTC CTA GCA TGT GCC GGC AGC ATG GCC CAC GGA CAC AGA TGC GGC ATC TTA ACA GAG AGC ATC AAA ACT CTG AAC ATC CTC ACA GAG AGC AAG ACT CCG TGC ACC GAG CTG GCT GTA GCA GAC GTC TTT GCT AAC ACC ACT GAG AAG GAA TTC TGC AGG GCG GCG ACC GTG CTC CGG CAG CTC TAC AGT CAC CGC ATC AAA CTC CTG AAA GGA CTG GAC AGG AAC CTC TGC AGC ATG GCA CAC GCG CTA AAG GCG ATC ATG AAG GAG AAA TAT TCA 
+ENSMAUG00000009458|mesocricetus_auratus  ATG GGT CAG CTA GCT GCC ATC CTG CTC TGC CTT CTA GCA TGT ACC GGG AAC TGG ACC CTC GGA TGC CAC CAT GGA GCC TTG AAA GAG ATC ATT CAC ATT TTG AAC CAG GTC ACA GAA AAA GGG ACA CCA TGC ACC GAG ATG GTC GTA CCA GAC GCC CTT TCA AAC TCC ACG GAG AAA GAC ATC TGC AGG GCT TCC CAG GTG CTT CGC AAG TTT TAT TTC CAA CAT CTC AAA GAC CTG AAG AAA CTC TAC AGG GGC ATC AGC AGC CTG TTT CCA CAG CTA AGA AGG ATC ATG CAA AAG AAA TAC TGG 
+ENSEASG00005017875|equus_asinus  ATG TGG CAG TGG AGG GCT GGT CAG CTT CTG GGG ATA TCA TGT ACC AGC AAC TTC ATC CAG GGA TGC AAA TAC GAC ACC TTA CAA GAG ATC ATC AAA ACG CTG AAC AAC CTC ACA GAT GGC AAG AAT TCG TGC ATG GAG CTG ACT GTA GCG GAT GCC TTT GCT AAC ACA GAT GGA AAG GAA ATC TGC AGG GCT GCA AAG GTG CTT CAA CAG CTC TAT AAA AGA CAT AAA GAA TGC CTG AGC GGA CTG GAC AGG AAC CTC AAG GGC ATG GCA AAC GGG CTA AAG ACA ATC ATG AAA GAG AAA TAC TCA 
+ENSMLUG00000016579|myotis_lucifugus  ATG GGT CAA CTG ATT CCA GCT CTG ATC TGC TTA CTA GCA TGT ACC AGC AAC TTC ACC CAC GGA CGC AAG TAC AAC ACC TTA CAA GAG ACC ATC AAA ATG CTG AAC GTC CTC ACA GCG AAA AAG GCC AAG TGC ATG GAG CTG ACC GTA TCA GAC GTC TTG GCT AAC ACA ACT GAG AAG GAA TTG TGC AGG GCC GCG ACG GTG CTT CGG CAG GTC TAC AGG CAC CAC ACC AGA ATA TTG AGC GGA CTT GAC AGG AAC CTC AGC AGC ATG GCC AAC AAG TTA AAG ACC ATC ATG CAA GAG AAA TAC TCA 
+ENSSSCG00000014282|sus_scrofa   ATG GGT CAA CTG ATC CCA ACC CTG GTC TGC TTA CTG GCA TGT ACC AGC AAC TTC GTC CAC GGA CAC AAG TGC GAC ACC TTA CAA GAG ATC ATC AAA ACC TTG AAC ATT CTC ACA GCG AGA AAG AAC TCG TGC ATG GAG CTG CCC GTG ACG GAC GTC TTT GCT AAC ACG ACG GAG AAG GAA TTC TGC CGG GCC TCG ACT GTG CTT CGG CAC ATC TAC AGA CAC CAC AAG AGC CTC CTG AGC GGA CTT GAC AGG AAC CTG AGC AGC ATG GCA AAC ATG CTA AAG ACG ATT ATG AAG GAG AAA TAC TCA 
+ENSPVAG00000015176|pteropus_vampyrus  ATG GGT CAG CTG ATT CCA GCT CTG GTG TGC TTA CTA GCA TGT ACC AGC AAC TTC ACC CAT GGA CAC AGG TAC AGT ACC TTA GAA GAG ATC ATC AAA ACG CTG AAT ATC CTC ACA ACG AGA AAG GAC TGG TGC ATG GAG CTG ATG GTG GCG GAC GTC TTC GCT AAC ACA GCG GAG GAG GAA TTC TGC AGG GCT GTG ACG GTG CTT CGG AAG GTC TAC AAA CAC CAT AAA CAG TTC CTG GGC AAA CTT GAC AGG AAC CTG CGC AGC ATG GCC AGG GAC CTA AGG AAG ACC ATG CAA GAG AAA TAC TCA 
+ENSCHIG00000019142|capra_hircus  ATG GGT CAG CTG ATT CCA GCG CTG GTC TGC TTA CTG GTA TGT ACC AGC CAC TTC GTC CAT GGA CAC AAG TGC GAT ACC TTA GAA GAG ATC ATC AAA ATG CTG AAC ATC CTC ACA TCG AGA AAG AAT TCA TGC ATG GAG CTG CCT GTA GCA GAC GTC TTT GCT AAT GCA ACT GAG AAG GAA TTC TGC AGG GCT GGA ATT GAG CTT AGG CGT ATC TAC AGG AAC CAC AAC AAA TTC CTG GGC GGA CTT GAC AGG AAT CTC AGC AGC TTG GCA AGC AAG CTA AAG ACT ATT ATG AAG GAG AAA TAC TCA 
+ENSOCUG00000011943|oryctolagus_cuniculus  ATG GGG CAG CTG CCT GTC ACT CTG CTC TGC CTC CTC GCA GGC ACC GCG CAC TTC ATC CAG GGG CGC AGG GGC GAC ATC CTA CCC GAA GTC ATC AAA ACC CTG AAC ATC CTC ACA GAG AGA AAG ACT CCA TGC ACC AAG CTG ATG ATA GCA GAC GCC CTG GCC AAC ACA ACC GAG AGA GAG GTC TGC AGG GCC GCG ACT GCA CTC CGG CAG TTC TAC CTC CAC CAC CTC AGA CTC CTG AGA GGA CTC GAC AGG AAC CTC TGC AGC ATG GCG AAG CTG CTA AAG ACC GCC ATG CAA GAG AAA TAC TCA 
+ENSANAG00000021885|aotus_nancymaae  ATG GGT CGA CTG CTT CCC GCT CTG TTC TTC CTG TTA GCA TGT GCC GGC AAC TTT GTC CAT GGA CAC AAC TGC GAT GCC TTA GAG GAG ATC ATC AGA ACT TTG AAC ACT GTC ACA GAA CAA AAG ACT CTG TGC ACC GAG TTG ACC GTA ATG GAC ATC TTT GCT AAC ACA ACT GAG AAG GAA TTC TGC AGG GCT GCG ACT GTG CTC CGG CAG TTC TAC AGC CAC CAT ATC CGA TCC CTG AAA CGG CTG GAC AGG AAC CTC TGC AGC CTG GCG GGC TTG CTA AAG ATG ATC ATG AAA GAG AAA TAT TCA 
+ENSECAG00000008299|equus_caballus  ATG AGA AGA GGA AAA AAA GCT CTG GTC TGC TTA CTA GCA TGT ACC AGC AAC TTC ATC CAG GGA TGC AAA TAC GAC ACC TTA CAA GAG ATC ATC AAA ACG CTG AAC AAC CTC ACA GAT GGC AAG AAT TCG TGC ATG GAG CTG ACT GTA GCG GAT GCC TTT GCT AAC ACA GAT GGA AAG GAA ATC TGC AGG GCT GCA AAG GTG CTT CAA CAG CTC TAT AAA AGA CAT AAA GAA TGC CTG AGC GGA CTG GAC AGG AAC CTC AAG GGC ATG GCA AAC GGG CTA AAG ACG ATC ATG AAA GAG AAA TAC TCA 
+ENSRNOG00000007624|rattus_norvegicus  ATG GGT CAC CTT GCT GTC ACC CTG TTC TGC TTT CTC ATA TGT ACC GGG AAC GGT ATC CAC GGA TGT AAC GAC AGC CCT CTG AGA GAG ATC ATC AAC ACT TTG AAC CAG GTC ACA GAA AAA GGG ACT CCA TGC ACC GAG ATG TTT GTA CCA GAC GTC CTT ACG AAC ACC ACG GAG AAC GAG ATC TGC AGG GCT TCC AGG GTG CTT CGC AAA TTT TAC TTC CCA CGT CTC GGT GAA CTG AGG AAA CTC TGT AGA GGT GTC AGC GGT CTG AAC TCA CTG CTA AAA AGC ATC CTA CGA GGG AAA TAC TTG 
+
+
+
+Printing out site pattern counts
+
+
+        25        306  P
+
+ENSG00000113520|homo_sapiens    AAA AAA AAA AAC AAC AAC AAC AAG AAG AAG AAG ACA ACA ACA ACC ACC ACC ACG ACT ACT ACT ACT AGA AGC AGC AGG AGG ATC ATC ATC ATC ATC ATG ATG CAA CAC CAC CAC CAG CAG CAG CAT CCC CCT CGA CGG CGG CTA CTA CTC CTC CTC CTC CTG CTG CTG CTG CTG CTG CTT GAA GAC GAC GAG GAG GAG GAG GAG GAT GCA GCC GCG GCG GCT GCT GGA GGC GGC GGC GGT GTA GTC GTG TAC TAT TCA TGC TGC TGC TGG TGT TTA TTC TTC TTC TTC TTC TTG TTG TTG TTT TTT 
+ENSNLEG00000012783|nomascus_leucogenys  ... ... ... ... ... ... ... ..C ... ... ... ... ... ..G ... ... G.. ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ..G ... ... ... ... ... ... ... ... ... G.. ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ..C ... ... ... ... ... ... ... ... ... ... ... ... 
+ENSGGOG00000005670|gorilla_gorilla  ... ... ... ... ... ... ... ... ... ... ... ... ... ..G ... ... G.. ... ... ... ... ... ... ... ... ... ... ... ... ... ... ..T ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... .T. ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... 
+ENSCJAG00000013083|callithrix_jacchus  ... ... .T. ... ... ... ... ..C ... ... ... ... ... .TG ... ... G.. .T. ... ... ... ... .A. ... .TT ... ... ... ... ... ... ... ... ... ... ... ... ..T ..A ... G.. ... ... G.. ... ... ... ... T.. ... ... ..G G.. ..A ... ... ... ... ... ... ... ... ... A.. ... ... ... ... ... ... ... ... ... ... ... ... A.. ... ... ... A.. ... ... ... ... ... ... ... ... ..C ..G ... .C. ... ... ... ... ... ... ... ... ... 
+ENSMMUG00000003133|macaca_mulatta  ... G.. ... ... ... ... ... ..C ... ... ... ... ... ..G ... ... G.. ... ... ... ... ... .A. ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... .G. ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... A.. ... ... ... ... C.. ... ... ... ... ... ... ... ... ... ... ... A.. .C. ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... C.. ... ... C.. ... 
+ENSPANG00000004677|papio_anubis  ... G.. ... ... ... ... ... ..C ... ... ... ... ... ..G ... ... G.. ... ... ... ... ... .A. ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... .G. ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... A.. ... ... ... ... C.. ... ... ... ... ... ... ... ... ... ... ... A.. .C. ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... C.. ... ... C.. ... 
+ENSFCTG00005023586|felis_catus  ... ... ... ... ... ... .C. ..C ..A ..C ... ... ... T.T ... .TA ..G G.. ..C ..G .G. GTG CA. .CA .T. ..A ... ... ... ... G.T .C. ... ... ... ..G ..T ... AGA ... A.A ..C ..A G.. AA. ... G.A ... ... ... ... ... ... ..C AGT A.. ... ... T.A A.. ... ... ..T TCT A.. ..C ... .C. A.. ... A.. A.A ..A ..C .TG ..C A.. AA. A.. .A. A.C ... ... ..T ..C ... AAG ... .T. A.C .T. ..G ... A.. G.. .G. ... ... AG. GGC C.G ..C 
+ENSOARG00020000164|ovis_aries_rambouillet  GGC ... ... ... ... ..T C.. ... ... ... ... ... G.. G.. C.T .TG ... ..T .T. ..G ... .A. .AG ..G .T. ... ... ... ... ..T G.. .A. ... ... ..G ... AG. ..T AGA .GT G.A ..C ..A G.G AA. A.. G.A ... ..G ... ..T ..T ... ... TCA ... ... ... T.A A.C ... ... ... ... ... ... ... TC. ... .T. A.. .GA ..A ... ... ... A.. A.. A.. ... ... ... .A. ... ..C ... ... ... ..T A.C ... ... ... A.. G.. .G. ... C.. AA. C.. ... ..C 
+ENSCAFG00845010991|canis_lupus_familiaris  .G. ... ... ... ... ... .C. ..C ..A ..C ... ... ... .AG ..T .TG ..T GT. ... .TG .GC GAC CAG .CA .T. ..A ... ... ... ... G.. .A. ... ... ... ..T ... ... AGA ... A.A A.C ..A A.. A.. ... G.A ... ... ... ..G ... ... ..C TC. A.. ... ... T.A A.. ... T.. ... ... A.. ..T ... .C. A.. ... A.. ..T ..A ... A.. ... A.. AA. A.. ... ..C ... ..A ..T ..C .AC ... ... .T. A.C CTC A.T .AT A.. G.. .G. ... ... AA. C.. ..C ... 
+ENSBTAG00000015957|bos_taurus   GGC ... ... ... ... ..T C.. ... ... ... ... ... ... G.. C.T .TG ... ... .T. ..G ... .A. .AG ..G .T. ... ... ... ... ..T G.. .A. ... ... ..G ... AG. ..T AGA .GT GCA ..C ..A GTG AA. A.. G.A ... ..G ... ..T ..T ... ... TCA T.. ... ... T.A A.C ... ... ... ... ... ... ... AC. ... .T. A.. .GA ..A .T. ... ... A.. A.. A.T ... ... ... .A. ... ..C ..C ... ... ..T AAC ... ... ... A.. G.. .G. ... C.. AA. C.. ... ..C 
+ENSMPUG00000010501|mustela_putorius_furo  .G. ... ... ... ... ... .CT ..C ..A ..C ... ... ... ..T ... .TG G.. GT. ... ..G .G. GAC CA. .CA .T. ..A ... ... ... ... G.. .A. ... ... ... ..T ... ... AGA ... A.. A.. ..A A.. A.. .A. G.A ... ... ... ..T ..T ... ..C TCA A.. ... ... T.A A.. ... C.. ..A ... C.. ... ... .C. AG. ... A.. ..A ..A ... T.. ... AA. AA. ... ... ..C A.. ... .CT ..C .AC ... ... .T. A.. CTC A.T ..G C.. G.. .G. ... ... A.. C.. ..C ..C 
+ENSMUSG00000000869|mus_musculus  C.G GGC G.T ... ... GCT .G. G.C ... GG. .GT ... ..C C.. GAT ..G CA. .GC .AG .T. ..A ..G CA. TTA GAG ... C.. ... ... ... G.. C.. ... ... ..G TG. A.A ... G.A ATA AGA ... GT. ATC ATG ..C A.A ... ..C T.T ..T ... G.. ... .CA ... ..A ... T.T G.. ..G TTT A.. ... AT. ... ... .GA A.. .A. A.. T.C .AT ... A.A ... T.. TCA A.G ... ..G A.. ... ..T ..C ..G ... ..T AAA C.A ... ..G GAG ..T C.. ... G.. ... .C. A.. C.C CA. 
+ENSRFEG00010017322|rhinolophus_ferrumequinum  .GC ... .GG ... ... ... ... G.. G.C ... ... ... ... G.. ..T .TG CT. ..C .TG ..A ... GAC .AG CC. .A. ... ... ... ... G.. G.. GGG ... G.A ... .G. .CA ..T ACA A.. ... ..C ..A G.. AA. ... AAA GGG ... ... ..T ..T ... ... .G. T.. ... ... ..A A.C ... ... ..A ... ATA ... ... ... ATC ... A.. ..A ..C ..C C.. ... A.G AA. A.. CA. ... C.. .A. ... C.G AGT .A. ... CT. A.C ... ... CA. A.. G.. .G. ... C.. A.. C.. ..G .GC 
+ENSCPOG00000031420|cavia_porcellus  .G. C.G .G. ... GGT ... GC. ..C ..A ... GG. T.C C.. ..G CTG G.. ... .G. ..G CAC G.C .G. CAG TA. .CA .CA ... ... ... ... G.. CC. ... ... ..G TG. .T. .GT G.. ..T ..A .GG GT. AT. A.C .AC .AA ... ... ... ..G G.G ... ... .CC A.. ... ..C ..C ACG ..C TT. ... ... A.. AGT ..A AG. C.C ... ... ... ..T ..C ... ..G A.. CAG A.. ... ..C ... ... GC. ... ... ..T ... CA. A.. ... ..G G.. ACA ... .G. C.G C.C .C. C.. ... G.G 
+ENSMICG00000012471|microcebus_murinus  ... ... ... ... ... ... .G. .GA ... ... ... ... ..C G.. G.T ... .T. G.. ..C ... ... ... .AG ..T .T. ... ... .G. ... ... G.. ... ... ... ..G ... ... ... AGC ... ACA .GC ..T ... AA. ... G.A ... ... ... ... ..G ... ... .C. A.. A.. ... ..C A.C ... ... ... ... ... ... ... ... .GC ... ... ... ..A ..G ... ... A.. CA. ... ... ... .C. ... ... ... ... ... ... ... ..C ... ... C.. C.. ... .G. ... C.. GC. C.. ... A.G 
+ENSMAUG00000009458|mesocricetus_auratus  ..G C.C ... ... ... GG. ... C.C .GA GG. ..A ... T.C C.. GT. ... G.. .G. CAG .T. ..G ..A CA. TT. CAG ... ... ... ..T ... GC. C.. ... ... ..G TG. ..A .T. A.A A.. A.A ... G.. ATC AA. ..C AAA ... ... A.. ..T ... G.. ... .CA ... ..A ... ..T GC. ..C T.. ... ... A.. ... ... ..A .GA ... A.. T.C TTT ... T.A ... A.. CCA ..G ... ... AC. ... ..T ..C .GG ... ... CAT A.C ... ..G GA. ..T C.. .G. A.. ... CA. A.. C.. .GG 
+ENSEASG00005017875|equus_asinus  .GC ... ... ... ... ... ... ..A ... ... ... ... ... G.G ..T .TG ... ..A .AG ..G GA. .A. .A. .AA .A. ... ... ... ... ... GC. .AA ... ... ..G TG. AGA ..G GGC ... ..A ... G.T GG. GA. .AA G.A ... A.. ... ..T ..G ... ... TC. A.. TG. .A. GG. AGG ... ... ..T ... ... .GA ... ..T ..C T.. A.. ..A ..A ... ... ... ... AA. A.. T.G ... A.. ... ..T ..C ... ... ... .A. AA. ... ... .G. C.. C.T C.G A.. C.. GG. C.. ... ..C 
+ENSMLUG00000016579|myotis_lucifugus  .GC ... ... ... ... ... ... ... ... ... ... ... ... T.. ... .TG ... ..C ..G .TG ... G.C CA. ..G GT. ... ... .C. ... ... G.. .C. ... ... ... .G. ... ... A.A ... ..A ..C ..A G.. A.. ... G.A T.. ... ... ..T ..T ... T.. AA. A.. ... ... T.A A.. ... ... ... ... ... ... ... .C. A.C ... A.. ... ..C ..C ... ... A.. AA. A.. ... ... AC. ... ... ..C ... ... ... .A. A.C ... ... A.A G.. A.. .G. ..G C.. AA. C.. ..G ..C 
+ENSSSCG00000014282|sus_scrofa   .GC ... ... ... ... ... ... ... ... ... ... ... ..G ..G C.. .TG ... ... ... ..C ..G .AC .AG ..A .TT C.. ... ... ... ..T G.. .AG ... ... ... ... ... ... AGA ..C ..A ..C ..A A.C A.C ... G.A ... ..G ..G ..T ..T ... ... TC. A.. ... ... T.A A.C ... ... ... ... ... ... ... .C. ..C ... A.. T.. ..A ..C ... ... A.. AA. A.. ... ..G ... ... ... ..C ... ... ... ... A.C ... ... C.. A.. G.. .G. ... ... A.. C.. ... ..C 
+ENSPVAG00000015176|pteropus_vampyrus  GGC ... ... ..T ... ... ... .G. .G. ... G.. ... ... G.G .TG .TG ... .A. ..G ..G G.G GAC CA. .AA .T. ... ... ... ... .C. G.. .AA ... ... ..G ... ... ..T AGA A.. G.A ... ..A G.. .AG ... AAA ... ... ..G ..T ..T ... ... TG. A.. ... ... T.A A.. ... ... ... ... ... ... ... AC. AG. ... A.. .T. ..C ... ... ... A.. A.G A.. ... ..G AC. ... ... ..C ... ... ... .A. C.C ... ... ... G.. G.G .G. ... C.. GAC C.. ..C ..C 
+ENSCHIG00000019142|capra_hircus  GGC ... ... ... ..T ..T C.. ... ... ... ... ... G.. G.. C.T .TG ... ..T .T. .TG ... .A. .AG ..G .T. ... ... ... ... ..T G.. .A. ... ... ..G ... A.. ..T AGA .GT G.A ..C ..A G.G AA. A.. G.A ... ..G ... ..T ..T ... ... TCA T.. ... ... T.A A.. ... ... ... ... ... ... ... TC. ... .T. A.. .GA ..A ... ... ... A.. A.. A.. ... ... ... .A. ... ..C ... ... ... ... A.C ... ... ... A.. G.. .G. ... C.. AA. C.. ... ..C 
+ENSOCUG00000011943|oryctolagus_cuniculus  .G. ... ... ... ... ... C.. .G. ... ... .GA ... ... G.. .TG ... .T. ..C ... ..C ..C ... CA. CT. .T. ... ... G.. ... GC. GC. C.. ... ... ..G .G. ... ..G AGA ... .CC ..C GT. A.. A.. ... G.A ... ..C ... ... ... ... ... .CA A.. ... ... ..C .C. ..G ... ... A.. ... ... ..A ... ..C ... A.. ... ... ..C ..C ..G A.. AAG .CG ..G A.. A.. .CA ... ..C ... ... ... G.. ..C G.C C.. C.. ... C.. .G. G.. C.. C.. C.. C.G ..C 
+ENSANAG00000021885|aotus_nancymaae  ... .G. ... ... ... ... ... ..C ... ... ... ... ... .TG ... ... G.. .T. ... ... ... ... .A. ... .CT ... ... ... ... ... ... ... ... ... .G. ... ... ..T ..A ... G.. ... ... G.. ... ... ... ... T.. ... ... ..G G.. ... ... ... ... ... ... ... ... ... ... ... ... ... ... ..A ... ... ... ... ... ... ... ... A.. ... ... ... ... ... ... ... ... ... ... ... ... ..C ... ... .C. ... ... ... ... ... ... ... ... ... 
+ENSECAG00000008299|equus_caballus  .GC ... ... ... ... ... ... ..A ... ... ... ... ... G.G ..T .TG ... ... .AG ..G GA. .A. .A. .AA .A. ... ... ... ... ... GC. .AA ... ... AG. TG. AGA ..G GGC ... ..A ... AAA G.. GA. .AA G.A ... ... ... ..T ..G ... ... TC. A.. GGA ... T.A AAA ... ... ..T ... ... .GA ... ..T ..C ... A.. ..A ..A ... ... ... ... AA. A.. A.A ... A.. ... ..T ..C ... ... ... .A. AA. ... ... .G. C.. G.. .G. A.. C.. GG. C.. ... ..C 
+ENSRNOG00000007624|rattus_norvegicus  .GG ..C ... ... ... GGT ... ..C ..A GG. ..C ... ..C C.. TTT ... C.T .GC .GG ... ..G ... C.. TT. CAG ... ..A ... ... ... G.. C.. ... C.A ..C TGT .CA ... A.A A.A AGA .G. GT. A.C G.T ..C AAA ... ..C G.. ..T ... G.. ... .CA ... ..T ... T.T GC. ..G TGT ... ... .G. ... ... ..A AGC AT. A.. T.C AAC ... A.G ... ..T TCA ..G ... ... A.. ... ... ..C .TG ... ... GA. A.C ... C.G GAA ..T ... .G. A.. ... C.. A.. C.. GG. 
+
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    1
+
+CODONML (in paml version 4.10.7, June 2023)  /home/maiara/Documents/bioinfo-masters/analise_dn_ds/data/align_codon_phylip/IL4.phy
+Model: One dN/dS ratio, 
+Codon frequency model: F3x4
+Site-class models: 
+ns =  25  ls = 102
+
+Codon usage in sequences
+--------------------------------------------------------------------------------------------------------------------------------------
+Phe TTT   2   2   2   2   1   1 | Ser TCT   0   0   0   0   0   0 | Tyr TAT   1   1   1   1   1   1 | Cys TGT   1   1   1   0   1   1
+    TTC   5   5   5   4   5   5 |     TCC   0   0   0   1   0   0 |     TAC   1   1   1   1   1   1 |     TGC   3   4   3   4   3   3
+Leu TTA   1   1   1   2   1   1 |     TCA   1   1   1   1   1   1 | *** TAA   0   0   0   0   0   0 | *** TGA   0   0   0   0   0   0
+    TTG   3   3   3   3   2   2 |     TCG   0   0   0   0   0   0 |     TAG   0   0   0   0   0   0 | Trp TGG   1   0   1   1   1   1
+--------------------------------------------------------------------------------------------------------------------------------------
+Leu CTT   1   1   1   1   2   2 | Pro CCT   1   1   1   0   1   1 | His CAT   1   1   1   2   2   2 | Arg CGT   0   0   0   0   0   0
+    CTC   4   4   4   2   4   4 |     CCC   1   1   1   1   1   1 |     CAC   3   3   3   2   3   3 |     CGC   0   0   0   0   0   0
+    CTA   2   2   2   2   2   2 |     CCA   0   0   0   0   0   0 | Gln CAA   1   0   1   2   1   1 |     CGA   1   0   1   1   1   1
+    CTG   6   6   6   6   7   7 |     CCG   0   0   0   0   0   0 |     CAG   3   4   3   1   2   2 |     CGG   2   2   2   2   3   3
+--------------------------------------------------------------------------------------------------------------------------------------
+Ile ATT   0   0   1   1   0   0 | Thr ACT   4   4   4   4   4   4 | Asn AAT   0   0   0   0   0   0 | Ser AGT   0   0   0   0   0   0
+    ATC   5   5   4   5   5   5 |     ACC   3   2   2   2   2   2 |     AAC   4   5   4   5   5   5 |     AGC   2   2   2   2   2   2
+    ATA   0   0   0   2   1   1 |     ACA   3   2   2   2   2   2 | Lys AAA   3   3   3   3   3   3 | Arg AGA   1   1   1   0   0   0
+Met ATG   2   2   2   4   2   2 |     ACG   1   2   2   0   2   2 |     AAG   4   3   4   4   4   4 |     AGG   2   2   2   2   2   2
+--------------------------------------------------------------------------------------------------------------------------------------
+Val GTT   0   0   0   0   0   0 | Ala GCT   2   2   2   3   2   2 | Asp GAT   1   1   1   1   0   0 | Gly GGT   1   1   1   1   1   1
+    GTC   1   1   2   2   0   0 |     GCC   1   2   1   2   3   3 |     GAC   2   2   2   2   2   2 |     GGC   3   3   3   2   3   3
+    GTA   1   1   1   0   0   0 |     GCA   1   1   1   1   1   1 | Glu GAA   1   1   1   1   2   2 |     GGA   1   2   1   1   1   1
+    GTG   1   1   1   1   1   1 |     GCG   2   2   2   2   2   2 |     GAG   5   5   5   5   4   4 |     GGG   0   0   0   0   0   0
+--------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Phe TTT   1   1   1   1   0   4 | Ser TCT   2   0   0   0   2   0 | Tyr TAT   1   0   2   0   0   1 | Cys TGT   0   2   0   2   0   2
+    TTC   4   3   3   3   4   1 |     TCC   0   0   0   1   0   1 |     TAC   1   2   3   2   2   1 |     TGC   2   3   3   3   3   3
+Leu TTA   1   2   1   2   1   1 |     TCA   1   2   0   1   1   1 | *** TAA   0   0   0   0   0   0 | *** TGA   0   0   0   0   0   0
+    TTG   2   0   1   1   2   2 |     TCG   0   1   1   0   0   2 |     TAG   0   0   0   0   0   0 | Trp TGG   0   0   0   0   0   0
+--------------------------------------------------------------------------------------------------------------------------------------
+Leu CTT   0   2   0   2   2   1 | Pro CCT   0   1   0   1   0   0 | His CAT   1   1   1   1   1   2 | Arg CGT   0   1   0   1   0   0
+    CTC   5   2   5   2   5   5 |     CCC   0   0   0   0   0   0 |     CAC   2   3   2   3   3   2 |     CGC   0   0   0   0   0   1
+    CTA   2   1   2   1   2   2 |     CCA   1   1   1   1   1   2 | Gln CAA   2   0   1   0   2   1 |     CGA   0   0   0   0   0   1
+    CTG   3   7   4   6   3   3 |     CCG   0   0   0   0   0   0 |     CAG   2   1   2   1   3   2 |     CGG   1   0   1   0   0   1
+--------------------------------------------------------------------------------------------------------------------------------------
+Ile ATT   1   2   2   2   2   1 | Thr ACT   0   2   5   1   4   0 | Asn AAT   1   2   1   2   1   1 | Ser AGT   2   0   0   1   2   1
+    ATC   6   5   5   5   5   5 |     ACC   5   2   2   2   2   2 |     AAC   6   3   8   4   8   3 |     AGC   3   5   4   3   0   2
+    ATA   1   0   0   0   0   1 |     ACA   4   1   3   2   3   3 | Lys AAA   6   3   4   3   3   2 | Arg AGA   2   1   4   1   4   2
+Met ATG   3   3   5   3   5   5 |     ACG   2   1   0   3   1   2 |     AAG   3   6   4   6   2   2 |     AGG   2   4   1   4   2   2
+--------------------------------------------------------------------------------------------------------------------------------------
+Val GTT   1   0   0   1   0   1 | Ala GCT   1   2   2   1   1   2 | Asp GAT   2   1   1   1   0   3 | Gly GGT   0   1   1   1   1   1
+    GTC   2   3   4   3   3   4 |     GCC   1   0   0   0   1   0 |     GAC   2   2   2   2   1   1 |     GGC   2   1   0   1   1   1
+    GTA   0   2   1   2   0   0 |     GCA   2   3   2   3   3   0 | Glu GAA   1   2   1   1   2   2 |     GGA   1   3   2   3   2   2
+    GTG   3   0   1   1   2   2 |     GCG   2   1   1   0   1   0 |     GAG   1   5   2   5   3   6 |     GGG   0   0   0   0   0   1
+--------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Phe TTT   0   1   1   2   1   0 | Ser TCT   0   0   0   0   0   0 | Tyr TAT   0   1   1   1   1   0 | Cys TGT   1   2   1   1   1   1
+    TTC   1   2   2   1   1   1 |     TCC   0   1   0   2   0   0 |     TAC   2   1   1   2   2   3 |     TGC   3   3   5   4   4   3
+Leu TTA   1   0   1   0   1   3 |     TCA   0   1   1   1   2   2 | *** TAA   0   0   0   0   0   0 | *** TGA   0   0   0   0   0   0
+    TTG   2   1   0   2   0   3 |     TCG   0   1   0   0   1   0 |     TAG   0   0   0   0   0   0 | Trp TGG   0   0   0   2   2   0
+--------------------------------------------------------------------------------------------------------------------------------------
+Leu CTT   2   0   0   3   2   2 | Pro CCT   1   0   2   0   0   0 | His CAT   2   1   0   2   1   0 | Arg CGT   0   1   0   0   0   0
+    CTC   5   6   6   4   3   2 |     CCC   1   2   0   0   0   0 |     CAC   2   4   4   2   0   3 |     CGC   1   0   1   1   0   1
+    CTA   2   2   2   3   1   1 |     CCA   2   1   0   3   0   1 | Gln CAA   1   2   0   2   2   3 |     CGA   0   0   0   0   0   0
+    CTG   5   6   5   3   5   4 |     CCG   0   0   1   0   0   0 |     CAG   2   4   2   4   4   1 |     CGG   2   1   1   0   0   1
+--------------------------------------------------------------------------------------------------------------------------------------
+Ile ATT   0   1   0   2   0   1 | Thr ACT   2   0   3   0   1   1 | Asn AAT   0   0   0   0   1   0 | Ser AGT   1   2   1   0   0   0
+    ATC   5   3   6   5   5   3 |     ACC   2   1   3   3   2   7 |     AAC   6   3   3   3   6   6 |     AGC   3   3   4   2   2   4
+    ATA   1   0   0   0   1   1 |     ACA   4   3   2   2   3   2 | Lys AAA   3   1   4   6   6   3 | Arg AGA   0   2   1   1   1   1
+Met ATG   4   3   5   3   4   5 |     ACG   0   3   0   1   1   1 |     AAG   4   2   4   3   5   6 |     AGG   4   4   2   3   3   3
+--------------------------------------------------------------------------------------------------------------------------------------
+Val GTT   0   0   0   0   0   0 | Ala GCT   1   2   2   2   3   2 | Asp GAT   0   0   0   0   3   0 | Gly GGT   0   2   1   1   1   1
+    GTC   3   5   1   2   0   3 |     GCC   2   6   2   3   1   3 |     GAC   3   2   2   3   2   2 |     GGC   0   0   2   1   2   0
+    GTA   2   0   1   1   1   1 |     GCA   3   1   3   1   2   1 | Glu GAA   2   1   1   1   2   1 |     GGA   1   0   2   2   3   2
+    GTG   0   3   1   1   1   1 |     GCG   0   1   4   0   1   2 |     GAG   6   2   5   3   3   4 |     GGG   2   2   0   2   2   0
+--------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Phe TTT   1   0   1   0   2   1 | Ser TCT   0   0   0   0   0   0 | Tyr TAT   0   0   0   0   1   1 | Cys TGT   1   1   1   0   1   1
+    TTC   2   4   3   2   4   1 |     TCC   0   0   0   0   1   0 |     TAC   2   3   2   2   1   2 |     TGC   4   3   4   4   4   5
+Leu TTA   2   2   2   0   2   2 |     TCA   1   1   2   1   1   1 | *** TAA   0   0   0   0   0   0 | *** TGA   0   0   0   0   0   0
+    TTG   1   0   1   0   3   0 |     TCG   2   0   1   0   0   1 |     TAG   0   0   0   0   0   0 | Trp TGG   0   1   0   0   0   0
+--------------------------------------------------------------------------------------------------------------------------------------
+Leu CTT   2   2   2   0   1   1 | Pro CCT   0   0   1   1   0   0 | His CAT   0   2   1   0   2   1 | Arg CGT   0   0   1   0   0   0
+    CTC   2   1   2  10   2   3 |     CCC   1   0   0   1   1   0 |     CAC   5   2   3   3   2   0 |     CGC   0   1   0   1   0   0
+    CTA   1   2   1   2   1   2 |     CCA   1   1   1   1   0   0 | Gln CAA   2   1   0   1   1   2 |     CGA   0   0   0   0   2   0
+    CTG   6   6   6   7   7   5 |     CCG   0   0   0   0   0   0 |     CAG   0   2   1   3   1   2 |     CGG   2   1   0   1   2   0
+--------------------------------------------------------------------------------------------------------------------------------------
+Ile ATT   2   1   3   0   0   0 | Thr ACT   1   0   2   3   5   1 | Asn AAT   0   1   3   0   0   1 | Ser AGT   0   1   0   0   0   0
+    ATC   4   3   4   4   5   5 |     ACC   4   4   2   5   2   2 |     AAC   6   3   3   3   5   6 |     AGC   5   2   4   1   2   2
+    ATA   0   0   0   1   0   0 |     ACA   1   2   1   2   2   2 | Lys AAA   2   5   3   2   3   8 | Arg AGA   2   1   1   4   1   3
+Met ATG   5   5   4   4   4   4 |     ACG   4   3   0   0   0   2 |     AAG   6   3   6   4   3   5 |     AGG   1   5   4   3   2   2
+--------------------------------------------------------------------------------------------------------------------------------------
+Val GTT   0   0   0   0   0   0 | Ala GCT   1   3   2   0   3   3 | Asp GAT   0   0   1   0   1   3 | Gly GGT   1   1   1   0   1   0
+    GTC   3   2   3   3   2   1 |     GCC   1   1   0   4   2   1 |     GAC   3   4   2   3   2   2 |     GGC   0   1   1   2   2   2
+    GTA   0   0   2   0   1   1 |     GCA   2   1   3   3   1   3 | Glu GAA   1   2   2   1   2   2 |     GGA   2   1   3   1   1   4
+    GTG   2   4   0   0   1   1 |     GCG   1   2   1   3   2   1 |     GAG   4   5   5   4   5   3 |     GGG   0   0   0   2   0   1
+--------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------
+Phe TTT   3 | Ser TCT   0 | Tyr TAT   0 | Cys TGT   3
+    TTC   2 |     TCC   1 |     TAC   2 |     TGC   3
+Leu TTA   0 |     TCA   1 | *** TAA   0 | *** TGA   0
+    TTG   2 |     TCG   0 |     TAG   0 | Trp TGG   0
+------------------------------------------------------
+Leu CTT   3 | Pro CCT   1 | His CAT   0 | Arg CGT   1
+    CTC   3 |     CCC   0 |     CAC   2 |     CGC   1
+    CTA   2 |     CCA   3 | Gln CAA   0 |     CGA   1
+    CTG   5 |     CCG   0 |     CAG   1 |     CGG   0
+------------------------------------------------------
+Ile ATT   0 | Thr ACT   2 | Asn AAT   0 | Ser AGT   0
+    ATC   5 |     ACC   4 |     AAC   7 |     AGC   3
+    ATA   1 |     ACA   1 | Lys AAA   5 | Arg AGA   2
+Met ATG   2 |     ACG   2 |     AAG   0 |     AGG   3
+------------------------------------------------------
+Val GTT   0 | Ala GCT   2 | Asp GAT   0 | Gly GGT   5
+    GTC   4 |     GCC   0 |     GAC   2 |     GGC   0
+    GTA   1 |     GCA   0 | Glu GAA   2 |     GGA   1
+    GTG   1 |     GCG   0 |     GAG   4 |     GGG   3
+------------------------------------------------------
+
+Codon position x base (3x4) table for each sequence.
+
+#1: ENSG00000113520|homo_sapiens
+position  1:    T:0.18627    C:0.25490    A:0.33333    G:0.22549
+position  2:    T:0.33333    C:0.19608    A:0.29412    G:0.17647
+position  3:    T:0.14706    C:0.37255    A:0.16667    G:0.31373
+Average         T:0.22222    C:0.27451    A:0.26471    G:0.23856
+
+#2: ENSNLEG00000012783|nomascus_leucogenys
+position  1:    T:0.18627    C:0.24510    A:0.32353    G:0.24510
+position  2:    T:0.33333    C:0.19608    A:0.29412    G:0.17647
+position  3:    T:0.14706    C:0.39216    A:0.14706    G:0.31373
+Average         T:0.22222    C:0.27778    A:0.25490    G:0.24510
+
+#3: ENSGGOG00000005670|gorilla_gorilla
+position  1:    T:0.18627    C:0.25490    A:0.32353    G:0.23529
+position  2:    T:0.34314    C:0.18627    A:0.29412    G:0.17647
+position  3:    T:0.15686    C:0.36275    A:0.15686    G:0.32353
+Average         T:0.22876    C:0.26797    A:0.25817    G:0.24510
+
+#4: ENSCJAG00000013083|callithrix_jacchus
+position  1:    T:0.19608    C:0.21569    A:0.35294    G:0.23529
+position  2:    T:0.36275    C:0.18627    A:0.29412    G:0.15686
+position  3:    T:0.15686    C:0.36275    A:0.17647    G:0.30392
+Average         T:0.23856    C:0.25490    A:0.27451    G:0.23203
+
+#5: ENSMMUG00000003133|macaca_mulatta
+position  1:    T:0.16667    C:0.28431    A:0.33333    G:0.21569
+position  2:    T:0.32353    C:0.20588    A:0.29412    G:0.17647
+position  3:    T:0.14706    C:0.38235    A:0.15686    G:0.31373
+Average         T:0.21242    C:0.29085    A:0.26144    G:0.23529
+
+#6: ENSPANG00000004677|papio_anubis
+position  1:    T:0.16667    C:0.28431    A:0.33333    G:0.21569
+position  2:    T:0.32353    C:0.20588    A:0.29412    G:0.17647
+position  3:    T:0.14706    C:0.38235    A:0.15686    G:0.31373
+Average         T:0.21242    C:0.29085    A:0.26144    G:0.23529
+
+#7: ENSFCTG00005023586|felis_catus
+position  1:    T:0.14706    C:0.18627    A:0.46078    G:0.20588
+position  2:    T:0.34314    C:0.20588    A:0.30392    G:0.14706
+position  3:    T:0.12745    C:0.40196    A:0.23529    G:0.23529
+Average         T:0.20588    C:0.26471    A:0.33333    G:0.19608
+
+#8: ENSOARG00020000164|ovis_aries_rambouillet
+position  1:    T:0.15686    C:0.19608    A:0.39216    G:0.25490
+position  2:    T:0.32353    C:0.16667    A:0.30392    G:0.20588
+position  3:    T:0.17647    C:0.33333    A:0.20588    G:0.28431
+Average         T:0.21895    C:0.23203    A:0.30065    G:0.24837
+
+#9: ENSCAFG00845010991|canis_lupus_familiaris
+position  1:    T:0.14706    C:0.18627    A:0.47059    G:0.19608
+position  2:    T:0.34314    C:0.16667    A:0.33333    G:0.15686
+position  3:    T:0.15686    C:0.40196    A:0.21569    G:0.22549
+Average         T:0.21569    C:0.25163    A:0.33987    G:0.19281
+
+#10: ENSBTAG00000015957|bos_taurus
+position  1:    T:0.15686    C:0.18627    A:0.41176    G:0.24510
+position  2:    T:0.34314    C:0.15686    A:0.30392    G:0.19608
+position  3:    T:0.17647    C:0.33333    A:0.19608    G:0.29412
+Average         T:0.22549    C:0.22549    A:0.30392    G:0.24510
+
+#11: ENSMPUG00000010501|mustela_putorius_furo
+position  1:    T:0.14706    C:0.21569    A:0.43137    G:0.20588
+position  2:    T:0.35294    C:0.19608    A:0.30392    G:0.14706
+position  3:    T:0.15686    C:0.37255    A:0.23529    G:0.23529
+Average         T:0.21895    C:0.26144    A:0.32353    G:0.19608
+
+#12: ENSMUSG00000000869|mus_musculus
+position  1:    T:0.18627    C:0.22549    A:0.33333    G:0.25490
+position  2:    T:0.37255    C:0.14706    A:0.28431    G:0.19608
+position  3:    T:0.19608    C:0.31373    A:0.19608    G:0.29412
+Average         T:0.25163    C:0.22876    A:0.27124    G:0.24837
+
+#13: ENSRFEG00010017322|rhinolophus_ferrumequinum
+position  1:    T:0.09804    C:0.27451    A:0.38235    G:0.24510
+position  2:    T:0.32353    C:0.17647    A:0.32353    G:0.17647
+position  3:    T:0.09804    C:0.38235    A:0.21569    G:0.30392
+Average         T:0.17320    C:0.27778    A:0.30719    G:0.24183
+
+#14: ENSCPOG00000031420|cavia_porcellus
+position  1:    T:0.13725    C:0.29412    A:0.30392    G:0.26471
+position  2:    T:0.32353    C:0.22549    A:0.23529    G:0.21569
+position  3:    T:0.12745    C:0.41176    A:0.13725    G:0.32353
+Average         T:0.19608    C:0.31046    A:0.22549    G:0.26797
+
+#15: ENSMICG00000012471|microcebus_murinus
+position  1:    T:0.12745    C:0.23529    A:0.37255    G:0.26471
+position  2:    T:0.30392    C:0.22549    A:0.26471    G:0.20588
+position  3:    T:0.11765    C:0.41176    A:0.17647    G:0.29412
+Average         T:0.18301    C:0.29085    A:0.27124    G:0.25490
+
+#16: ENSMAUG00000009458|mesocricetus_auratus
+position  1:    T:0.17647    C:0.26471    A:0.33333    G:0.22549
+position  2:    T:0.31373    C:0.17647    A:0.31373    G:0.19608
+position  3:    T:0.13725    C:0.37255    A:0.22549    G:0.26471
+Average         T:0.20915    C:0.27124    A:0.29085    G:0.22876
+
+#17: ENSEASG00005017875|equus_asinus
+position  1:    T:0.15686    C:0.17647    A:0.40196    G:0.26471
+position  2:    T:0.25490    C:0.16667    A:0.37255    G:0.20588
+position  3:    T:0.14706    C:0.29412    A:0.24510    G:0.31373
+Average         T:0.18627    C:0.21242    A:0.33987    G:0.26144
+
+#18: ENSMLUG00000016579|myotis_lucifugus
+position  1:    T:0.15686    C:0.18627    A:0.43137    G:0.22549
+position  2:    T:0.30392    C:0.21569    A:0.31373    G:0.16667
+position  3:    T:0.07843    C:0.40196    A:0.21569    G:0.30392
+Average         T:0.17974    C:0.26797    A:0.32026    G:0.23203
+
+#19: ENSSSCG00000014282|sus_scrofa
+position  1:    T:0.15686    C:0.21569    A:0.42157    G:0.20588
+position  2:    T:0.32353    C:0.19608    A:0.30392    G:0.17647
+position  3:    T:0.08824    C:0.41176    A:0.16667    G:0.33333
+Average         T:0.18954    C:0.27451    A:0.29739    G:0.23856
+
+#20: ENSPVAG00000015176|pteropus_vampyrus
+position  1:    T:0.14706    C:0.20588    A:0.38235    G:0.26471
+position  2:    T:0.31373    C:0.17647    A:0.32353    G:0.18627
+position  3:    T:0.11765    C:0.33333    A:0.18627    G:0.36275
+Average         T:0.19281    C:0.23856    A:0.29739    G:0.27124
+
+#21: ENSCHIG00000019142|capra_hircus
+position  1:    T:0.16667    C:0.18627    A:0.39216    G:0.25490
+position  2:    T:0.33333    C:0.15686    A:0.31373    G:0.19608
+position  3:    T:0.18627    C:0.32353    A:0.20588    G:0.28431
+Average         T:0.22876    C:0.22222    A:0.30392    G:0.24510
+
+#22: ENSOCUG00000011943|oryctolagus_cuniculus
+position  1:    T:0.08824    C:0.30392    A:0.35294    G:0.25490
+position  2:    T:0.32353    C:0.23529    A:0.25490    G:0.18627
+position  3:    T:0.03922    C:0.47059    A:0.18627    G:0.30392
+Average         T:0.15033    C:0.33660    A:0.26471    G:0.24837
+
+#23: ENSANAG00000021885|aotus_nancymaae
+position  1:    T:0.19608    C:0.21569    A:0.33333    G:0.25490
+position  2:    T:0.34314    C:0.19608    A:0.28431    G:0.17647
+position  3:    T:0.16667    C:0.36275    A:0.17647    G:0.29412
+Average         T:0.23529    C:0.25817    A:0.26471    G:0.24183
+
+#24: ENSECAG00000008299|equus_caballus
+position  1:    T:0.14706    C:0.15686    A:0.42157    G:0.27451
+position  2:    T:0.26471    C:0.16667    A:0.37255    G:0.19608
+position  3:    T:0.12745    C:0.31373    A:0.29412    G:0.26471
+Average         T:0.17974    C:0.21242    A:0.36275    G:0.24510
+
+#25: ENSRNOG00000007624|rattus_norvegicus
+position  1:    T:0.16667    C:0.22549    A:0.36275    G:0.24510
+position  2:    T:0.33333    C:0.16667    A:0.24510    G:0.25490
+position  3:    T:0.19608    C:0.38235    A:0.19608    G:0.22549
+Average         T:0.23203    C:0.25817    A:0.26797    G:0.24183
+
+Sums of codon usage counts
+------------------------------------------------------------------------------
+Phe F TTT      31 | Ser S TCT       4 | Tyr Y TAT      16 | Cys C TGT      26
+      TTC      73 |       TCC       8 |       TAC      42 |       TGC      86
+Leu L TTA      31 |       TCA      27 | *** * TAA       0 | *** * TGA       0
+      TTG      39 |       TCG      10 |       TAG       0 | Trp W TGG      10
+------------------------------------------------------------------------------
+Leu L CTT      35 | Pro P CCT      13 | His H CAT      28 | Arg R CGT       5
+      CTC      95 |       CCC      12 |       CAC      64 |       CGC       8
+      CTA      44 |       CCA      21 | Gln Q CAA      29 |       CGA       9
+      CTG     134 |       CCG       1 |       CAG      53 |       CGG      28
+------------------------------------------------------------------------------
+Ile I ATT      22 | Thr T ACT      57 | Asn N AAT      14 | Ser S AGT      11
+      ATC     117 |       ACC      69 |       AAC     120 |       AGC      66
+      ATA      11 |       ACA      56 | Lys K AAA      90 | Arg R AGA      37
+Met M ATG      90 |       ACG      35 |       AAG      97 |       AGG      66
+------------------------------------------------------------------------------
+Val V GTT       3 | Ala A GCT      48 | Asp D GAT      20 | Gly G GGT      26
+      GTC      57 |       GCC      40 |       GAC      54 |       GGC      36
+      GTA      19 |       GCA      43 | Glu E GAA      37 |       GGA      43
+      GTG      31 |       GCG      35 |       GAG     103 |       GGG      15
+------------------------------------------------------------------------------
+
+
+Codon position x base (3x4) table, overall
+
+position  1:    T:0.15804    C:0.22706    A:0.37569    G:0.23922
+position  2:    T:0.32627    C:0.18784    A:0.30078    G:0.18510
+position  3:    T:0.14078    C:0.37137    A:0.19490    G:0.29294
+Average         T:0.20837    C:0.26209    A:0.29046    G:0.23908
+
+Codon frequencies under model, for use in evolver (TTT TTC TTA TTG ... GGG):
+  0.00747540  0.01971923  0.01034895  0.01555466
+  0.00430375  0.01135278  0.00595811  0.00895515
+  0.00689139  0.01817867  0.00000000  0.00000000
+  0.00424085  0.01118687  0.00000000  0.00882428
+  0.01074009  0.02833111  0.01486860  0.02234777
+  0.00618330  0.01631082  0.00856016  0.01286608
+  0.00990102  0.02611774  0.01370699  0.02060185
+  0.00609294  0.01607245  0.00843507  0.01267806
+  0.01777031  0.04687599  0.02460123  0.03697610
+  0.01023074  0.02698750  0.01416345  0.02128792
+  0.01638200  0.04321380  0.02267926  0.03408734
+  0.01008123  0.02659311  0.01395647  0.02097683
+  0.01131512  0.02984797  0.01566467  0.02354428
+  0.00651436  0.01718411  0.00901848  0.01355494
+  0.01043113  0.02751610  0.01444087  0.02170488
+  0.00641916  0.01693298  0.00888669  0.01335685
+
+
+
+Nei & Gojobori 1986. dN/dS (dN, dS)
+(Note: This matrix is not used in later ML. analysis.
+Use runmode = -2 for ML pairwise comparison.)
+
+ENSG00000113520|homo_sapiens
+ENSNLEG00000012783|nomascus_leucogenys 0.6206 (0.0174 0.0280)
+ENSGGOG00000005670|gorilla_gorilla 0.3090 (0.0086 0.0279) 0.6206 (0.0174 0.0280)
+ENSCJAG00000013083|callithrix_jacchus 0.7657 (0.0740 0.0966) 0.5947 (0.0623 0.1047) 0.6849 (0.0716 0.1046)
+ENSMMUG00000003133|macaca_mulatta 1.6034 (0.0443 0.0276) 1.6010 (0.0443 0.0277) 1.6034 (0.0443 0.0276) 0.6948 (0.0718 0.1034)
+ENSPANG00000004677|papio_anubis 1.6034 (0.0443 0.0276) 1.6010 (0.0443 0.0277) 1.6034 (0.0443 0.0276) 0.6948 (0.0718 0.1034)-1.0000 (0.0000 0.0000)
+ENSFCTG00005023586|felis_catus 0.4013 (0.2966 0.7391) 0.3861 (0.2933 0.7596) 0.3978 (0.3093 0.7777) 0.3565 (0.3010 0.8444) 0.3898 (0.2977 0.7637) 0.3898 (0.2977 0.7637)
+ENSOARG00020000164|ovis_aries_rambouillet 0.3124 (0.2112 0.6760) 0.3326 (0.2196 0.6602) 0.2974 (0.2226 0.7483) 0.3217 (0.2375 0.7385) 0.3893 (0.2588 0.6648) 0.3893 (0.2588 0.6648) 0.3048 (0.2581 0.8467)
+ENSCAFG00845010991|canis_lupus_familiaris 0.3478 (0.2641 0.7592) 0.3654 (0.2640 0.7224) 0.3639 (0.2763 0.7592) 0.3141 (0.2615 0.8324) 0.3971 (0.2960 0.7455) 0.3971 (0.2960 0.7455) 0.3861 (0.1702 0.4408) 0.2631 (0.2055 0.7813)
+ENSBTAG00000015957|bos_taurus 0.3040 (0.2282 0.7505) 0.3230 (0.2368 0.7331) 0.2886 (0.2398 0.8309) 0.2990 (0.2521 0.8430) 0.3673 (0.2708 0.7373) 0.3673 (0.2708 0.7373) 0.3083 (0.2761 0.8953) 0.4339 (0.0258 0.0596) 0.2990 (0.2222 0.7433)
+ENSMPUG00000010501|mustela_putorius_furo 0.4326 (0.2684 0.6204) 0.4316 (0.2683 0.6215) 0.4108 (0.2684 0.6533) 0.4102 (0.2779 0.6775) 0.4482 (0.2880 0.6426) 0.4482 (0.2880 0.6426) 0.7175 (0.2217 0.3090) 0.4236 (0.2554 0.6028) 0.3787 (0.0869 0.2294) 0.4770 (0.2733 0.5729)
+ENSMUSG00000000869|mus_musculus 0.4250 (0.4875 1.1471) 0.4321 (0.4832 1.1183) 0.3844 (0.4957 1.2895) 0.4006 (0.5219 1.3028) 0.3870 (0.4761 1.2304) 0.3870 (0.4761 1.2304) 0.5260 (0.6588 1.2523) 0.6710 (0.6000 0.8941) 0.5255 (0.5624 1.0702) 0.6789 (0.6090 0.8971) 0.5772 (0.6168 1.0686)
+ENSRFEG00010017322|rhinolophus_ferrumequinum 0.6538 (0.3859 0.5902) 0.6096 (0.3893 0.6385) 0.6326 (0.3930 0.6213) 0.6969 (0.4258 0.6110) 0.6938 (0.4243 0.6115) 0.6938 (0.4243 0.6115) 0.4724 (0.3648 0.7724) 0.7238 (0.3205 0.4428) 0.5249 (0.3609 0.6877) 0.7516 (0.3384 0.4503) 0.6478 (0.3807 0.5878) 0.4077 (0.6344 1.5561)
+ENSCPOG00000031420|cavia_porcellus 0.5570 (0.4432 0.7957) 0.6444 (0.4548 0.7058) 0.5768 (0.4590 0.7957) 0.5954 (0.4880 0.8195) 0.6393 (0.4650 0.7274) 0.6393 (0.4650 0.7274) 0.5128 (0.5750 1.1213) 0.5676 (0.5265 0.9277) 0.5087 (0.4827 0.9490) 0.5336 (0.5319 0.9969) 0.4780 (0.5318 1.1125) 0.2189 (0.5702 2.6044) 0.8199 (0.6814 0.8310)
+ENSMICG00000012471|microcebus_murinus 0.4913 (0.1679 0.3418) 0.5672 (0.1759 0.3102) 0.4621 (0.1787 0.3867) 0.5030 (0.2070 0.4115) 0.5910 (0.1931 0.3267) 0.5910 (0.1931 0.3267) 0.4153 (0.2913 0.7016) 0.5769 (0.2362 0.4095) 0.4329 (0.2784 0.6430) 0.5558 (0.2419 0.4353) 0.3665 (0.2766 0.7548) 0.4891 (0.5579 1.1406) 0.9968 (0.4060 0.4074) 0.7822 (0.4664 0.5963)
+ENSMAUG00000009458|mesocricetus_auratus 0.5997 (0.4203 0.7009) 0.5869 (0.4017 0.6845) 0.5418 (0.4203 0.7758) 0.4955 (0.4174 0.8424) 0.5443 (0.4147 0.7619) 0.5443 (0.4147 0.7619) 0.6107 (0.5661 0.9270) 0.7427 (0.5439 0.7322) 0.5905 (0.5098 0.8633) 0.7728 (0.5626 0.7280) 0.7923 (0.5390 0.6803) 1.0683 (0.3062 0.2866) 0.5412 (0.5298 0.9789) 0.4937 (0.5091 1.0313) 0.5556 (0.4237 0.7625)
+ENSEASG00005017875|equus_asinus 0.5282 (0.3175 0.6011) 0.6457 (0.3304 0.5117) 0.5801 (0.3306 0.5698) 0.6779 (0.3861 0.5695) 0.7407 (0.3727 0.5031) 0.7407 (0.3727 0.5031) 0.5866 (0.4150 0.7073) 0.5810 (0.2853 0.4910) 0.4561 (0.3599 0.7890) 0.5274 (0.2866 0.5434) 0.6039 (0.3651 0.6046) 0.5554 (0.6208 1.1178) 0.8020 (0.4416 0.5506) 0.6642 (0.5485 0.8259) 1.0255 (0.3594 0.3505) 0.7476 (0.5591 0.7479)
+ENSMLUG00000016579|myotis_lucifugus 0.4723 (0.2103 0.4452) 0.4697 (0.2215 0.4717) 0.4454 (0.2216 0.4976) 0.4629 (0.2493 0.5386) 0.5250 (0.2370 0.4514) 0.5250 (0.2370 0.4514) 0.3783 (0.2113 0.5587) 0.4656 (0.1840 0.3951) 0.3477 (0.1918 0.5517) 0.4488 (0.2003 0.4462) 0.5247 (0.2262 0.4312) 0.4178 (0.4941 1.1827) 1.1568 (0.3066 0.2650) 0.5874 (0.4683 0.7973) 0.6556 (0.2324 0.3545) 0.6232 (0.4483 0.7193) 0.5795 (0.2941 0.5074)
+ENSSSCG00000014282|sus_scrofa 0.2447 (0.1635 0.6684) 0.2627 (0.1715 0.6527) 0.2744 (0.1742 0.6350) 0.3033 (0.2031 0.6698) 0.3289 (0.2107 0.6408) 0.3289 (0.2107 0.6408) 0.3118 (0.2205 0.7069) 0.2158 (0.0994 0.4607) 0.2570 (0.1562 0.6079) 0.2371 (0.1148 0.4843) 0.2954 (0.1807 0.6116) 0.4780 (0.5360 1.1213) 0.6091 (0.2924 0.4801) 0.4507 (0.4210 0.9341) 0.4309 (0.1899 0.4407) 0.6133 (0.4823 0.7863) 0.3485 (0.2582 0.7409) 0.3351 (0.1290 0.3850)
+ENSPVAG00000015176|pteropus_vampyrus 0.4101 (0.2644 0.6446) 0.4935 (0.2795 0.5664) 0.4519 (0.2765 0.6119) 0.4741 (0.2902 0.6122) 0.5584 (0.3027 0.5421) 0.5584 (0.3027 0.5421) 0.4261 (0.2995 0.7027) 0.4056 (0.1905 0.4697) 0.3911 (0.2425 0.6201) 0.3875 (0.1986 0.5126) 0.4892 (0.2544 0.5201) 0.7050 (0.6073 0.8615) 0.7598 (0.3546 0.4667) 0.5454 (0.4967 0.9107) 0.4856 (0.2700 0.5560) 0.5768 (0.4756 0.8245) 0.6322 (0.3107 0.4914) 0.6256 (0.1860 0.2973) 0.4406 (0.1849 0.4195)
+ENSCHIG00000019142|capra_hircus 0.3174 (0.2131 0.6715) 0.3380 (0.2216 0.6555) 0.3017 (0.2245 0.7442) 0.3261 (0.2395 0.7342) 0.3949 (0.2607 0.6602) 0.3949 (0.2607 0.6602) 0.3130 (0.2570 0.8212) 0.1410 (0.0085 0.0602) 0.2560 (0.1938 0.7568) 0.3739 (0.0345 0.0924) 0.4371 (0.2543 0.5818) 0.6200 (0.5829 0.9402) 0.7726 (0.3311 0.4285) 0.6254 (0.5267 0.8422) 0.5558 (0.2382 0.4285) 0.6683 (0.5310 0.7946) 0.5932 (0.2964 0.4996) 0.4574 (0.1725 0.3771) 0.2104 (0.1015 0.4821) 0.4212 (0.1898 0.4505)
+ENSOCUG00000011943|oryctolagus_cuniculus 0.3994 (0.2418 0.6055) 0.4396 (0.2538 0.5773) 0.3804 (0.2539 0.6674) 0.4100 (0.2696 0.6577) 0.4171 (0.2488 0.5965) 0.4171 (0.2488 0.5965) 0.4178 (0.3795 0.9083) 0.4622 (0.3160 0.6835) 0.4313 (0.3585 0.8312) 0.4374 (0.3201 0.7319) 0.3983 (0.3545 0.8900) 0.4176 (0.5075 1.2153) 0.6836 (0.4273 0.6251) 0.6827 (0.4781 0.7004) 0.4560 (0.2450 0.5373) 0.5250 (0.4201 0.8002) 0.4666 (0.3822 0.8191) 0.5171 (0.2724 0.5268) 0.3331 (0.2527 0.7586) 0.4491 (0.3279 0.7301) 0.4920 (0.3178 0.6460)
+ENSANAG00000021885|aotus_nancymaae 0.6823 (0.0649 0.0951) 0.5169 (0.0533 0.1031) 0.6077 (0.0626 0.1030) 1.0696 (0.0305 0.0285) 0.8024 (0.0817 0.1018) 0.8024 (0.0817 0.1018) 0.3646 (0.3155 0.8653) 0.3234 (0.2329 0.7203) 0.3004 (0.2609 0.8684) 0.3016 (0.2475 0.8205) 0.3915 (0.2773 0.7084) 0.4247 (0.4877 1.1484) 0.6803 (0.4171 0.6131) 0.5747 (0.4706 0.8188) 0.5015 (0.2024 0.4036) 0.5166 (0.3991 0.7726) 0.7100 (0.3742 0.5271) 0.4642 (0.2447 0.5271) 0.2918 (0.1958 0.6711) 0.4599 (0.2825 0.6142) 0.3281 (0.2349 0.7160) 0.4448 (0.2932 0.6592)
+ENSECAG00000008299|equus_caballus 0.5678 (0.3048 0.5368) 0.6236 (0.3175 0.5091) 0.6249 (0.3176 0.5083) 0.6698 (0.3689 0.5508) 0.8018 (0.3590 0.4478) 0.8018 (0.3590 0.4478) 0.6740 (0.3697 0.5485) 0.5273 (0.2433 0.4613) 0.5109 (0.3162 0.6189) 0.5187 (0.2504 0.4828) 0.6807 (0.3210 0.4715) 0.6744 (0.6237 0.9248) 0.8121 (0.3923 0.4831) 0.6394 (0.5232 0.8183) 0.9379 (0.3317 0.3537) 0.9127 (0.5572 0.6104) 0.4907 (0.0709 0.1446) 0.6333 (0.2605 0.4114) 0.3667 (0.2177 0.5936) 0.6038 (0.2705 0.4480) 0.5413 (0.2539 0.4691) 0.4538 (0.3683 0.8118) 0.6492 (0.3404 0.5243)
+ENSRNOG00000007624|rattus_norvegicus 0.4010 (0.4070 1.0150) 0.3591 (0.3849 1.0720) 0.3675 (0.4145 1.1279) 0.4048 (0.4555 1.1252) 0.3844 (0.4238 1.1023) 0.3844 (0.4238 1.1023) 0.4537 (0.6277 1.3833) 0.5943 (0.5600 0.9422) 0.5663 (0.5414 0.9560) 0.6280 (0.5887 0.9373) 0.5081 (0.5401 1.0629) 0.6136 (0.2698 0.4397) 0.4786 (0.5315 1.1105) 0.3348 (0.5494 1.6409) 0.5055 (0.4927 0.9745) 0.7021 (0.2322 0.3307) 0.5743 (0.5998 1.0444) 0.4987 (0.4674 0.9374) 0.4058 (0.4686 1.1549) 0.4985 (0.5382 1.0795) 0.6213 (0.5737 0.9233) 0.5281 (0.4352 0.8241) 0.4258 (0.4362 1.0245) 0.6213 (0.5669 0.9124)
+
+NSsites Model 7: beta (10 categories)
+
+TREE #  1:  (1, ((2, ((4, 23), (((((7, (9, 11)), ((13, 18), ((17, 24), 20))), (((8, 10), 21), 19)), ((((12, 25), 16), 14), 22)), 15))), (5, 6)), 3);   MP score: 649
+lnL(ntime: 47  np: 50):  -3762.414974      +0.000000
+  26..1    26..27   27..28   28..2    28..29   29..30   30..4    30..23   29..31   31..32   32..33   33..34   34..35   35..7    35..36   36..9    36..11   34..37   37..38   38..13   38..18   37..39   39..40   40..17   40..24   39..20   33..41   41..42   42..43   43..8    43..10   42..21   41..19   32..44   44..45   45..46   46..47   47..12   47..25   46..16   45..14   44..22   31..15   27..48   48..5    48..6    26..3  
+ 0.021121 0.010548 0.011223 0.020754 0.052507 0.100667 0.055745 0.039503 0.300952 0.003064 0.302314 0.035999 0.266968 0.486373 0.135273 0.157144 0.219775 0.041644 0.062563 0.845689 0.216548 0.037335 0.572476 0.227426 0.054316 0.426718 0.040969 0.303195 0.033490 0.009443 0.094194 0.018371 0.241428 0.212622 0.129969 0.966780 0.193018 0.686742 0.410906 0.307541 1.385078 0.550572 0.380741 0.096229 0.000004 0.000004 0.021066 2.774521 0.722780 0.612464
+
+Note: Branch length is defined as number of nucleotide substitutions per codon (not per nucleotide site).
+
+tree length = 10.787008
+
+(1: 0.021121, ((2: 0.020754, ((4: 0.055745, 23: 0.039503): 0.100667, (((((7: 0.486373, (9: 0.157144, 11: 0.219775): 0.135273): 0.266968, ((13: 0.845689, 18: 0.216548): 0.062563, ((17: 0.227426, 24: 0.054316): 0.572476, 20: 0.426718): 0.037335): 0.041644): 0.035999, (((8: 0.009443, 10: 0.094194): 0.033490, 21: 0.018371): 0.303195, 19: 0.241428): 0.040969): 0.302314, ((((12: 0.686742, 25: 0.410906): 0.193018, 16: 0.307541): 0.966780, 14: 1.385078): 0.129969, 22: 0.550572): 0.212622): 0.003064, 15: 0.380741): 0.300952): 0.052507): 0.011223, (5: 0.000004, 6: 0.000004): 0.096229): 0.010548, 3: 0.021066);
+
+(ENSG00000113520|homo_sapiens: 0.021121, ((ENSNLEG00000012783|nomascus_leucogenys: 0.020754, ((ENSCJAG00000013083|callithrix_jacchus: 0.055745, ENSANAG00000021885|aotus_nancymaae: 0.039503): 0.100667, (((((ENSFCTG00005023586|felis_catus: 0.486373, (ENSCAFG00845010991|canis_lupus_familiaris: 0.157144, ENSMPUG00000010501|mustela_putorius_furo: 0.219775): 0.135273): 0.266968, ((ENSRFEG00010017322|rhinolophus_ferrumequinum: 0.845689, ENSMLUG00000016579|myotis_lucifugus: 0.216548): 0.062563, ((ENSEASG00005017875|equus_asinus: 0.227426, ENSECAG00000008299|equus_caballus: 0.054316): 0.572476, ENSPVAG00000015176|pteropus_vampyrus: 0.426718): 0.037335): 0.041644): 0.035999, (((ENSOARG00020000164|ovis_aries_rambouillet: 0.009443, ENSBTAG00000015957|bos_taurus: 0.094194): 0.033490, ENSCHIG00000019142|capra_hircus: 0.018371): 0.303195, ENSSSCG00000014282|sus_scrofa: 0.241428): 0.040969): 0.302314, ((((ENSMUSG00000000869|mus_musculus: 0.686742, ENSRNOG00000007624|rattus_norvegicus: 0.410906): 0.193018, ENSMAUG00000009458|mesocricetus_auratus: 0.307541): 0.966780, ENSCPOG00000031420|cavia_porcellus: 1.385078): 0.129969, ENSOCUG00000011943|oryctolagus_cuniculus: 0.550572): 0.212622): 0.003064, ENSMICG00000012471|microcebus_murinus: 0.380741): 0.300952): 0.052507): 0.011223, (ENSMMUG00000003133|macaca_mulatta: 0.000004, ENSPANG00000004677|papio_anubis: 0.000004): 0.096229): 0.010548, ENSGGOG00000005670|gorilla_gorilla: 0.021066);
+
+Detailed output identifying parameters
+
+kappa (ts/tv) =  2.77452
+
+Parameters in M7 (beta):
+ p =   0.72278  q =   0.61246
+
+
+MLEs of dN/dS (w) for site classes (K=10)
+
+p:   0.10000  0.10000  0.10000  0.10000  0.10000  0.10000  0.10000  0.10000  0.10000  0.10000
+w:   0.02746  0.12275  0.24132  0.37022  0.50155  0.62912  0.74743  0.85113  0.93434  0.98897
+
+dN & dS for each branch
+
+ branch          t       N       S   dN/dS      dN      dS  N*dN  S*dS
+
+  26..1      0.021   235.1    70.9  0.5414  0.0059  0.0109   1.4   0.8
+  26..27     0.011   235.1    70.9  0.5414  0.0029  0.0054   0.7   0.4
+  27..28     0.011   235.1    70.9  0.5414  0.0031  0.0058   0.7   0.4
+  28..2      0.021   235.1    70.9  0.5414  0.0058  0.0107   1.4   0.8
+  28..29     0.053   235.1    70.9  0.5414  0.0146  0.0270   3.4   1.9
+  29..30     0.101   235.1    70.9  0.5414  0.0281  0.0518   6.6   3.7
+  30..4      0.056   235.1    70.9  0.5414  0.0155  0.0287   3.7   2.0
+  30..23     0.040   235.1    70.9  0.5414  0.0110  0.0203   2.6   1.4
+  29..31     0.301   235.1    70.9  0.5414  0.0839  0.1549  19.7  11.0
+  31..32     0.003   235.1    70.9  0.5414  0.0009  0.0016   0.2   0.1
+  32..33     0.302   235.1    70.9  0.5414  0.0842  0.1556  19.8  11.0
+  33..34     0.036   235.1    70.9  0.5414  0.0100  0.0185   2.4   1.3
+  34..35     0.267   235.1    70.9  0.5414  0.0744  0.1374  17.5   9.7
+  35..7      0.486   235.1    70.9  0.5414  0.1355  0.2503  31.9  17.7
+  35..36     0.135   235.1    70.9  0.5414  0.0377  0.0696   8.9   4.9
+  36..9      0.157   235.1    70.9  0.5414  0.0438  0.0809  10.3   5.7
+  36..11     0.220   235.1    70.9  0.5414  0.0612  0.1131  14.4   8.0
+  34..37     0.042   235.1    70.9  0.5414  0.0116  0.0214   2.7   1.5
+  37..38     0.063   235.1    70.9  0.5414  0.0174  0.0322   4.1   2.3
+  38..13     0.846   235.1    70.9  0.5414  0.2357  0.4353  55.4  30.8
+  38..18     0.217   235.1    70.9  0.5414  0.0603  0.1115  14.2   7.9
+  37..39     0.037   235.1    70.9  0.5414  0.0104  0.0192   2.4   1.4
+  39..40     0.572   235.1    70.9  0.5414  0.1595  0.2947  37.5  20.9
+  40..17     0.227   235.1    70.9  0.5414  0.0634  0.1171  14.9   8.3
+  40..24     0.054   235.1    70.9  0.5414  0.0151  0.0280   3.6   2.0
+  39..20     0.427   235.1    70.9  0.5414  0.1189  0.2196  28.0  15.6
+  33..41     0.041   235.1    70.9  0.5414  0.0114  0.0211   2.7   1.5
+  41..42     0.303   235.1    70.9  0.5414  0.0845  0.1561  19.9  11.1
+  42..43     0.033   235.1    70.9  0.5414  0.0093  0.0172   2.2   1.2
+  43..8      0.009   235.1    70.9  0.5414  0.0026  0.0049   0.6   0.3
+  43..10     0.094   235.1    70.9  0.5414  0.0262  0.0485   6.2   3.4
+  42..21     0.018   235.1    70.9  0.5414  0.0051  0.0095   1.2   0.7
+  41..19     0.241   235.1    70.9  0.5414  0.0673  0.1243  15.8   8.8
+  32..44     0.213   235.1    70.9  0.5414  0.0593  0.1094  13.9   7.8
+  44..45     0.130   235.1    70.9  0.5414  0.0362  0.0669   8.5   4.7
+  45..46     0.967   235.1    70.9  0.5414  0.2694  0.4976  63.4  35.3
+  46..47     0.193   235.1    70.9  0.5414  0.0538  0.0993  12.6   7.0
+  47..12     0.687   235.1    70.9  0.5414  0.1914  0.3535  45.0  25.0
+  47..25     0.411   235.1    70.9  0.5414  0.1145  0.2115  26.9  15.0
+  46..16     0.308   235.1    70.9  0.5414  0.0857  0.1583  20.2  11.2
+  45..14     1.385   235.1    70.9  0.5414  0.3860  0.7129  90.8  50.5
+  44..22     0.551   235.1    70.9  0.5414  0.1534  0.2834  36.1  20.1
+  31..15     0.381   235.1    70.9  0.5414  0.1061  0.1960  24.9  13.9
+  27..48     0.096   235.1    70.9  0.5414  0.0268  0.0495   6.3   3.5
+  48..5      0.000   235.1    70.9  0.5414  0.0000  0.0000   0.0   0.0
+  48..6      0.000   235.1    70.9  0.5414  0.0000  0.0000   0.0   0.0
+  26..3      0.021   235.1    70.9  0.5414  0.0059  0.0108   1.4   0.8
+
+
+
+NSsites Model 8: beta&w>1 (11 categories)
+
+TREE #  1:  (1, ((2, ((4, 23), (((((7, (9, 11)), ((13, 18), ((17, 24), 20))), (((8, 10), 21), 19)), ((((12, 25), 16), 14), 22)), 15))), (5, 6)), 3);   MP score: 649
+lnL(ntime: 47  np: 52):  -3760.534009      +0.000000
+  26..1    26..27   27..28   28..2    28..29   29..30   30..4    30..23   29..31   31..32   32..33   33..34   34..35   35..7    35..36   36..9    36..11   34..37   37..38   38..13   38..18   37..39   39..40   40..17   40..24   39..20   33..41   41..42   42..43   43..8    43..10   42..21   41..19   32..44   44..45   45..46   46..47   47..12   47..25   46..16   45..14   44..22   31..15   27..48   48..5    48..6    26..3  
+ 0.021224 0.010588 0.011354 0.020750 0.053513 0.100539 0.055929 0.039722 0.306354 0.005122 0.303801 0.033862 0.269839 0.488073 0.135990 0.158240 0.220504 0.042342 0.063616 0.852883 0.219186 0.033799 0.576210 0.227784 0.055036 0.431952 0.042634 0.302873 0.033311 0.009507 0.094357 0.018598 0.243360 0.207135 0.132124 0.981595 0.194940 0.690186 0.417012 0.306804 1.404507 0.560184 0.379262 0.096774 0.000004 0.000004 0.021167 2.826692 0.889919 0.850562 0.883617 1.417137
+
+Note: Branch length is defined as number of nucleotide substitutions per codon (not per nucleotide site).
+
+tree length = 10.874548
+
+(1: 0.021224, ((2: 0.020750, ((4: 0.055929, 23: 0.039722): 0.100539, (((((7: 0.488073, (9: 0.158240, 11: 0.220504): 0.135990): 0.269839, ((13: 0.852883, 18: 0.219186): 0.063616, ((17: 0.227784, 24: 0.055036): 0.576210, 20: 0.431952): 0.033799): 0.042342): 0.033862, (((8: 0.009507, 10: 0.094357): 0.033311, 21: 0.018598): 0.302873, 19: 0.243360): 0.042634): 0.303801, ((((12: 0.690186, 25: 0.417012): 0.194940, 16: 0.306804): 0.981595, 14: 1.404507): 0.132124, 22: 0.560184): 0.207135): 0.005122, 15: 0.379262): 0.306354): 0.053513): 0.011354, (5: 0.000004, 6: 0.000004): 0.096774): 0.010588, 3: 0.021167);
+
+(ENSG00000113520|homo_sapiens: 0.021224, ((ENSNLEG00000012783|nomascus_leucogenys: 0.020750, ((ENSCJAG00000013083|callithrix_jacchus: 0.055929, ENSANAG00000021885|aotus_nancymaae: 0.039722): 0.100539, (((((ENSFCTG00005023586|felis_catus: 0.488073, (ENSCAFG00845010991|canis_lupus_familiaris: 0.158240, ENSMPUG00000010501|mustela_putorius_furo: 0.220504): 0.135990): 0.269839, ((ENSRFEG00010017322|rhinolophus_ferrumequinum: 0.852883, ENSMLUG00000016579|myotis_lucifugus: 0.219186): 0.063616, ((ENSEASG00005017875|equus_asinus: 0.227784, ENSECAG00000008299|equus_caballus: 0.055036): 0.576210, ENSPVAG00000015176|pteropus_vampyrus: 0.431952): 0.033799): 0.042342): 0.033862, (((ENSOARG00020000164|ovis_aries_rambouillet: 0.009507, ENSBTAG00000015957|bos_taurus: 0.094357): 0.033311, ENSCHIG00000019142|capra_hircus: 0.018598): 0.302873, ENSSSCG00000014282|sus_scrofa: 0.243360): 0.042634): 0.303801, ((((ENSMUSG00000000869|mus_musculus: 0.690186, ENSRNOG00000007624|rattus_norvegicus: 0.417012): 0.194940, ENSMAUG00000009458|mesocricetus_auratus: 0.306804): 0.981595, ENSCPOG00000031420|cavia_porcellus: 1.404507): 0.132124, ENSOCUG00000011943|oryctolagus_cuniculus: 0.560184): 0.207135): 0.005122, ENSMICG00000012471|microcebus_murinus: 0.379262): 0.306354): 0.053513): 0.011354, (ENSMMUG00000003133|macaca_mulatta: 0.000004, ENSPANG00000004677|papio_anubis: 0.000004): 0.096774): 0.010588, ENSGGOG00000005670|gorilla_gorilla: 0.021167);
+
+Detailed output identifying parameters
+
+kappa (ts/tv) =  2.82669
+
+Parameters in M8 (beta&w>1):
+  p0 =   0.88992  p =   0.85056 q =   0.88362
+ (p1 =   0.11008) w =   1.41714
+
+
+MLEs of dN/dS (w) for site classes (K=11)
+
+p:   0.08899  0.08899  0.08899  0.08899  0.08899  0.08899  0.08899  0.08899  0.08899  0.08899  0.11008
+w:   0.03360  0.12156  0.22008  0.32424  0.43171  0.54086  0.65027  0.75842  0.86318  0.96021  1.41714
+
+dN & dS for each branch
+
+ branch          t       N       S   dN/dS      dN      dS  N*dN  S*dS
+
+  26..1      0.021   234.9    71.1  0.5924  0.0061  0.0103   1.4   0.7
+  26..27     0.011   234.9    71.1  0.5924  0.0030  0.0051   0.7   0.4
+  27..28     0.011   234.9    71.1  0.5924  0.0033  0.0055   0.8   0.4
+  28..2      0.021   234.9    71.1  0.5924  0.0060  0.0101   1.4   0.7
+  28..29     0.054   234.9    71.1  0.5924  0.0154  0.0260   3.6   1.8
+  29..30     0.101   234.9    71.1  0.5924  0.0289  0.0488   6.8   3.5
+  30..4      0.056   234.9    71.1  0.5924  0.0161  0.0271   3.8   1.9
+  30..23     0.040   234.9    71.1  0.5924  0.0114  0.0193   2.7   1.4
+  29..31     0.306   234.9    71.1  0.5924  0.0881  0.1486  20.7  10.6
+  31..32     0.005   234.9    71.1  0.5924  0.0015  0.0025   0.3   0.2
+  32..33     0.304   234.9    71.1  0.5924  0.0873  0.1474  20.5  10.5
+  33..34     0.034   234.9    71.1  0.5924  0.0097  0.0164   2.3   1.2
+  34..35     0.270   234.9    71.1  0.5924  0.0776  0.1309  18.2   9.3
+  35..7      0.488   234.9    71.1  0.5924  0.1403  0.2368  33.0  16.8
+  35..36     0.136   234.9    71.1  0.5924  0.0391  0.0660   9.2   4.7
+  36..9      0.158   234.9    71.1  0.5924  0.0455  0.0768  10.7   5.5
+  36..11     0.221   234.9    71.1  0.5924  0.0634  0.1070  14.9   7.6
+  34..37     0.042   234.9    71.1  0.5924  0.0122  0.0205   2.9   1.5
+  37..38     0.064   234.9    71.1  0.5924  0.0183  0.0309   4.3   2.2
+  38..13     0.853   234.9    71.1  0.5924  0.2451  0.4138  57.6  29.4
+  38..18     0.219   234.9    71.1  0.5924  0.0630  0.1063  14.8   7.6
+  37..39     0.034   234.9    71.1  0.5924  0.0097  0.0164   2.3   1.2
+  39..40     0.576   234.9    71.1  0.5924  0.1656  0.2796  38.9  19.9
+  40..17     0.228   234.9    71.1  0.5924  0.0655  0.1105  15.4   7.9
+  40..24     0.055   234.9    71.1  0.5924  0.0158  0.0267   3.7   1.9
+  39..20     0.432   234.9    71.1  0.5924  0.1242  0.2096  29.2  14.9
+  33..41     0.043   234.9    71.1  0.5924  0.0123  0.0207   2.9   1.5
+  41..42     0.303   234.9    71.1  0.5924  0.0871  0.1469  20.5  10.4
+  42..43     0.033   234.9    71.1  0.5924  0.0096  0.0162   2.2   1.1
+  43..8      0.010   234.9    71.1  0.5924  0.0027  0.0046   0.6   0.3
+  43..10     0.094   234.9    71.1  0.5924  0.0271  0.0458   6.4   3.3
+  42..21     0.019   234.9    71.1  0.5924  0.0053  0.0090   1.3   0.6
+  41..19     0.243   234.9    71.1  0.5924  0.0699  0.1181  16.4   8.4
+  32..44     0.207   234.9    71.1  0.5924  0.0595  0.1005  14.0   7.1
+  44..45     0.132   234.9    71.1  0.5924  0.0380  0.0641   8.9   4.6
+  45..46     0.982   234.9    71.1  0.5924  0.2821  0.4762  66.3  33.8
+  46..47     0.195   234.9    71.1  0.5924  0.0560  0.0946  13.2   6.7
+  47..12     0.690   234.9    71.1  0.5924  0.1984  0.3348  46.6  23.8
+  47..25     0.417   234.9    71.1  0.5924  0.1199  0.2023  28.2  14.4
+  46..16     0.307   234.9    71.1  0.5924  0.0882  0.1488  20.7  10.6
+  45..14     1.405   234.9    71.1  0.5924  0.4037  0.6814  94.8  48.4
+  44..22     0.560   234.9    71.1  0.5924  0.1610  0.2718  37.8  19.3
+  31..15     0.379   234.9    71.1  0.5924  0.1090  0.1840  25.6  13.1
+  27..48     0.097   234.9    71.1  0.5924  0.0278  0.0470   6.5   3.3
+  48..5      0.000   234.9    71.1  0.5924  0.0000  0.0000   0.0   0.0
+  48..6      0.000   234.9    71.1  0.5924  0.0000  0.0000   0.0   0.0
+  26..3      0.021   234.9    71.1  0.5924  0.0061  0.0103   1.4   0.7
+
+
+Naive Empirical Bayes (NEB) analysis
+Positively selected sites (*: P>95%; **: P>99%)
+(amino acids refer to 1st sequence: ENSG00000113520|homo_sapiens)
+
+            Pr(w>1)     post mean +- SE for w
+
+     7 P      0.611         1.201
+    28 Q      0.725         1.270
+    43 L      0.567         1.175
+    77 R      0.842         1.335
+    78 F      0.655         1.232
+    92 L      0.914         1.373
+
+
+Bayes Empirical Bayes (BEB) analysis (Yang, Wong & Nielsen 2005. Mol. Biol. Evol. 22:1107-1118)
+Positively selected sites (*: P>95%; **: P>99%)
+(amino acids refer to 1st sequence: ENSG00000113520|homo_sapiens)
+
+            Pr(w>1)     post mean +- SE for w
+
+     7 P      0.629         1.281 +- 0.373
+    28 Q      0.734         1.364 +- 0.348
+    43 L      0.579         1.237 +- 0.364
+    73 S      0.502         1.176 +- 0.353
+    77 R      0.858         1.469 +- 0.337
+    78 F      0.654         1.296 +- 0.338
+    92 L      0.929         1.523 +- 0.315
+
+
+
+The grid 
+
+p0:   0.050  0.150  0.250  0.350  0.450  0.550  0.650  0.750  0.850  0.950
+p :   0.100  0.300  0.500  0.700  0.900  1.100  1.300  1.500  1.700  1.900
+q :   0.100  0.300  0.500  0.700  0.900  1.100  1.300  1.500  1.700  1.900
+ws:   1.500  2.500  3.500  4.500  5.500  6.500  7.500  8.500  9.500 10.500
+
+
+Posterior on the grid
+
+p0:   0.000  0.000  0.000  0.000  0.000  0.000  0.001  0.055  0.561  0.383
+p :   0.000  0.000  0.015  0.124  0.256  0.273  0.197  0.098  0.031  0.006
+q :   0.000  0.003  0.047  0.135  0.183  0.183  0.158  0.126  0.095  0.069
+ws:   0.934  0.061  0.003  0.000  0.000  0.000  0.000  0.000  0.000  0.000

@@ -59,7 +59,7 @@ rule align_protein:
     output: "data/align_prot/{gene}.fasta"
     threads: THREADS_MAFFT
     conda: "envs/dnds.yaml"
-    shell: """mafft --auto --thread {threads} {input} > {output}""".format(threads=THREADS_MAFFT, input=input, output=output)
+    shell: """mafft --auto --thread {threads} {input} > {output}"""
 
 ######################################################
 # 4 - Back-translate aligned protein sequences to CDS
@@ -70,7 +70,7 @@ rule pal2nal:
         cds = "data/raw_cds/{gene}.fasta"
     output: "data/align_codon/{gene}.fasta"
     conda: "envs/dnds.yaml"
-    shell: """pal2nal.pl {input.protein} {input.cds} -output fasta -nogap > {output}""".format(input=input, output=output)
+    shell: """pal2nal.pl {input.protein} {input.cds} -output fasta -nogap > {output}"""
 
 ######################################################
 # 5 - Maximum likelihood tree IQTREE
@@ -80,7 +80,7 @@ rule build_tree:
     output: "results/trees/{gene}.treefile"
     threads: THREADS_TOTAL
     conda: "envs/dnds.yaml"
-    shell: """iqtree2 -s {input} -st CODON -m MFP -T {threads} -nt AUTO -pre data/trees/{wildcards.gene}"""
+    shell: """iqtree2 -s {input} -st CODON -m MFP -nt 2 -pre data/trees/{wildcards.gene}"""
 
 ######################################################
 # 6 - Convert FASTA to PHYLIP
@@ -97,9 +97,9 @@ rule fasta_to_phylip:
 rule generate_ctl:
     input: 
         aln = "data/align_codon_phylip/{gene}.phy",
-        tree = "results/trees/{gene}.treefile"
+        tree = "data/trees/{gene}.treefile"
     output: 
-        ctl = "results/paml/{gene}/{gene}.ctl"
+        ctl = "results/paml/{gene}/codeml.ctl"
     run:
         os.makedirs(f"results/paml/{wildcards.gene}", exist_ok=True)
         with open(output.ctl, 'w') as ctl:

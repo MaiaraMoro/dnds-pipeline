@@ -29,8 +29,7 @@ GENE_IDS = load_gene_names(GENES_TSV)
 
 rule all:
     input:
-        expand("results/dnds/{gene}.txt", gene=GENE_IDS),
-        "results/dnds/summary.tsv"
+        expand("results/paml_site/{{gene}}/mlc", gene=lambda wildcards: get_candidates()
 
 
 #######################################################
@@ -91,50 +90,48 @@ rule fasta_to_phylip:
     conda: "envs/dnds.yaml"
     shell: """python src/03_fasta_to_phylip.py {input} {output}"""
 
-######################################################
-# 7 - Generate codeml.ctl for PAML
-######################################################
-rule generate_ctl:
+#######################################################
+# 7 - PAML (Nssites = 0,1,2,7,8) for every gene 
+#######################################################
+rule ctl_global:
     input: 
         aln = "data/align_codon_phylip/{gene}.phy",
         tree = "data/trees/{gene}.treefile"
     output: 
         ctl = "results/paml/{gene}/codeml.ctl"
     run:
-        os.makedirs(f"results/paml/{wildcards.gene}", exist_ok=True)
-        with open(output.ctl, 'w') as ctl:
-            ctl.write(textwrap.dedent(f"""
+        os.makedirs(os.path.dirname(output.ctl), exist_ok=True)
+        ctl.write(textwrap.dedent(f"""
                 seqfile = {os.path.abspath(input.aln)}
                 treefile = {os.path.abspath(input.tree)}
                 outfile = mlc
 
-                noisy = 9
+                noisy = 3
                 verbose = 1
                 runmode = 0
+                cleandata = 0
 
                 seqtype = 1
+                ndata = 1 #one
                 CodonFreq = 2
-
-                model = 0
-                NSsites = 7 8
                 icode = 0
+                clock = 0
                 fix_kappa = 0
                 kappa = 2
                 fix_omega = 0
-                omega = 1
+                omega = 0.5
+
+                model = 0
+                NSsites = 0 1 2 7 8 
             """))
 
-######################################################
-# 8 - Run codeml
-######################################################
-rule run_codeml:
-    input:
-        ctl = "results/paml/{gene}/codeml.ctl"
-    output:
-        out = "results/paml/{gene}/mlc"
+rule run_codeml_global:
+    input: ctl_global
+    output: "results/paml/{gene}/mlc"
     conda:
         "envs/paml.yaml"
     shell:
         """
         cd results/paml/{wildcards.gene} && codeml codeml.ctl
         """
+

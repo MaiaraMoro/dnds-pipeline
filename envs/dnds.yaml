@@ -10,4 +10,5 @@ dependencies:
   - perl           
   - pal2nal          
   - iqtree
+  - paml >= 4.10.7
   

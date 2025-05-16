@@ -26,11 +26,9 @@ GENE_IDS = load_gene_names(GENES_TSV)
     #               RULES                  #
     ########################################
 
-
 rule all:
-    input:
-        expand("results/paml_site/{{gene}}/mlc", gene=lambda wildcards: get_candidates()
-
+    input: 
+        expand("results/paml/{gene}/mlc", gene=GENE_IDS)
 
 #######################################################
 # 1 - Fetch CDS sequences
@@ -126,7 +124,7 @@ rule ctl_global:
             """))
 
 rule run_codeml_global:
-    input: ctl_global
+    input: "results/paml/{gene}/codeml.ctl"
     output: "results/paml/{gene}/mlc"
     conda:
         "envs/paml.yaml"

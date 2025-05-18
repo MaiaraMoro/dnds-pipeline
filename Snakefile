@@ -74,10 +74,31 @@ rule pal2nal:
 ######################################################
 rule build_tree:
     input: "data/align_codon/{gene}.fasta"
-    output: "results/trees/{gene}.treefile"
+    output: "data/trees/{gene}.treefile"
     threads: THREADS_TOTAL
     conda: "envs/dnds.yaml"
     shell: """iqtree2 -s {input} -st CODON -m MFP -nt 2 -pre data/trees/{wildcards.gene}"""
+
+rule add_header_tree:
+    input:
+        fasta = "data/align_codon/{gene}.fasta",
+        tree  = "data/trees/{gene}.treefile"
+    output: "data/trees_hdr/{gene}.tree"
+    conda:  "envs/dnds.yaml"
+    run:
+        import os, re
+        from Bio import SeqIO
+
+        # Nº de táxons (= nº de sequências no alinhamento)
+        ntaxa = len(list(SeqIO.parse(input.fasta, "fasta")))
+
+        # Newick sem quebras/brancos
+        with open(input.tree) as ih:
+            newick = re.sub(r"\s+", "", ih.read().strip())
+
+        os.makedirs(os.path.dirname(output[0]), exist_ok=True)
+        with open(output[0], "w") as oh:
+            oh.write(f"{ntaxa} 1\n{newick}\n") 
 
 ######################################################
 # 6 - Convert FASTA to PHYLIP
@@ -94,12 +115,13 @@ rule fasta_to_phylip:
 rule ctl_global:
     input: 
         aln = "data/align_codon_phylip/{gene}.phy",
-        tree = "data/trees/{gene}.treefile"
+        tree = "data/trees_hdr/{gene}.tree"
     output: 
         ctl = "results/paml/{gene}/codeml.ctl"
     run:
         os.makedirs(os.path.dirname(output.ctl), exist_ok=True)
-        ctl.write(textwrap.dedent(f"""
+        with open(output.ctl, "w") as f:
+            f.write(textwrap.dedent(f"""
                 seqfile = {os.path.abspath(input.aln)}
                 treefile = {os.path.abspath(input.tree)}
                 outfile = mlc
@@ -107,10 +129,11 @@ rule ctl_global:
                 noisy = 3
                 verbose = 1
                 runmode = 0
-                cleandata = 0
+                cleandata = 1
+                fix_blength = 2
 
                 seqtype = 1
-                ndata = 1 #one
+                ndata = 1 
                 CodonFreq = 2
                 icode = 0
                 clock = 0
@@ -127,9 +150,16 @@ rule run_codeml_global:
     input: "results/paml/{gene}/codeml.ctl"
     output: "results/paml/{gene}/mlc"
     conda:
-        "envs/paml.yaml"
+        "envs/dnds.yaml"
     shell:
         """
         cd results/paml/{wildcards.gene} && codeml codeml.ctl
         """
 
+rule analyze_paml_results:
+    input: "results/paml/{gene}/mlc"
+    output:
+        lrt = "results/paml/{gene}/lrt.tsv",
+        beb = "results/paml/{gene}/beb.tsv"
+    conda: "envs/dnds.yaml"
+    shell: "python src/04_analyze_paml_output.py {wildcards.gene} {output.lrt} {output.beb}"

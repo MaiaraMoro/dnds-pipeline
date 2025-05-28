@@ -2,7 +2,7 @@ import requests
 import os
 import sys
 from pathlib import Path
-from utils import load_genes_dict
+from utils.load_gene_file import load_genes_dict
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 

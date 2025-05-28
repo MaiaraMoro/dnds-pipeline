@@ -49,39 +49,46 @@ def likelihood_ratio_test(lnL0, np0, lnL1, np1):
 
 def extract_beb_sites(filepath, model_tag="M8"):
     """
-    Extracts BEB sites from the MLC file.
+    Extrai os sítios BEB (Bayes Empirical Bayes) referentes ao modelo
+    indicado (M2a ou M8) dentro do arquivo .mlc.
+    Devolve lista de tuplas: (modelo, site, aa, prob, signif)
     """
-    with open(filepath, 'r') as file:
-        lines = file.readlines()
+    with open(filepath, "r") as fh:
+        lines = fh.readlines()
+
+    model_num = re.match(r"M(\d+)", model_tag).group(1)
 
     results = []
     recording = False
     model_found = False
+    got_data = False
 
-    for i, line in enumerate(lines):
-        if f"Model {model_tag}" in line:
+    # procura primeiro o cabeçalho do modelo correto
+    for line in lines:
+        if re.search(rf"NSsites\s+Model\s+{model_num}\b", line):
             model_found = True
-            
+            continue
+
+        # quando achar a seção BEB daquele modelo, começa a gravar
         if model_found and "Bayes Empirical Bayes" in line:
             recording = True
             continue
-        
-        if recording:
-            if re.match(f"^\s*\d+", line):
-                parts = line.strip().split()
-                if len(parts) >= 5:
-                    try:
-                        site = int(parts[0])
-                        aa = parts[1]
-                        prob = float(parts[2])
-                        if prob > 0.95:
-                            results.append((model_tag, site, aa, prob))
-                    except ValueError:
-                        continue
-                    
-            elif line.strip() == "":
-                break 
 
+        if recording:
+            # quando termina a tabela (linha em branco), sai
+            if not line.strip():
+                if got_data:
+                    break
+                else:
+                    continue
+
+            if re.match(r"\s*\d+", line):
+                got_data = True
+                site, aa, prob = line.split()[:3]
+                site, prob = int(site), float(prob)
+                signif = "**" if prob > 0.99 else "*" if prob > 0.95 else ""
+                results.append((model_tag, site, aa, prob, signif))
+                
     return results
 
 def main(gene, output_lrt_path, output_beb_path):
@@ -108,11 +115,11 @@ def main(gene, output_lrt_path, output_beb_path):
                 out_lrt.write(f"{gene}\t{name}\tNA\tNA\tNA\n")
 
     with open(output_beb_path, 'w') as out_beb:
-        out_beb.write("Gene\tModel\tSite\tAA\tProb\n")
+        out_beb.write("Gene\tModel\tSite\tAA\tProb\tSignif\n")
         for model in ["M2a", "M8"]:
             beb_sites = extract_beb_sites(path, model_tag=model)
-            for tag, site, aa, prob in beb_sites:
-                out_beb.write(f"{gene}\t{tag}\t{site}\t{aa}\t{prob:.3f}\n")
+            for tag, site, aa, prob, signif in beb_sites:
+                out_beb.write(f"{gene}\t{tag}\t{site}\t{aa}\t{prob:.3f}\t{signif}\n")
 
 
 if __name__ == "__main__":

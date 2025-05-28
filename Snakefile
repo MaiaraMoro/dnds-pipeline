@@ -1,3 +1,15 @@
+import pathlib, sys, os
+
+PROJECT_ROOT = pathlib.Path.cwd()      # diretório onde o Snakemake foi iniciado
+SRC_DIR = PROJECT_ROOT / "src"
+
+sys.path.insert(0, str(SRC_DIR))       # põe no topo do sys.path
+os.environ["PYTHONPATH"] = (
+    f"{SRC_DIR}{os.pathsep}{os.environ.get('PYTHONPATH', '')}"
+)
+
+from utils.load_gene_file import load_gene_names
+
     #######################################
     # Snakefile for Dn/Ds Analysis        #
     #                                     #
@@ -10,9 +22,6 @@
     #######################################
 
 import yaml, os, textwrap
-import sys
-from pathlib import Path
-from utils.load_gene_file import load_gene_names
 
 configfile: "config.yaml"
 
@@ -27,8 +36,10 @@ GENE_IDS = load_gene_names(GENES_TSV)
     ########################################
 
 rule all:
-    input: 
-        expand("results/paml/{gene}/mlc", gene=GENE_IDS)
+    input:
+        expand("results/paml/{gene}/mlc",      gene=GENE_IDS),
+        expand("results/paml/{gene}/lrt.tsv",  gene=GENE_IDS),
+        expand("results/paml/{gene}/beb.tsv",  gene=GENE_IDS)
 
 #######################################################
 # 1 - Fetch CDS sequences
@@ -77,7 +88,7 @@ rule build_tree:
     output: "data/trees/{gene}.treefile"
     threads: THREADS_TOTAL
     conda: "envs/dnds.yaml"
-    shell: """iqtree2 -s {input} -st CODON -m MFP -nt 2 -pre data/trees/{wildcards.gene}"""
+    shell: """iqtree2 -s {input} -st CODON -m MFP -nt {threads} -pre data/trees/{wildcards.gene}"""
 
 rule add_header_tree:
     input:

@@ -1,9 +1,9 @@
 import pathlib, sys, os
 
-PROJECT_ROOT = pathlib.Path.cwd()      # diretório onde o Snakemake foi iniciado
+PROJECT_ROOT = pathlib.Path.cwd()    
 SRC_DIR = PROJECT_ROOT / "src"
 
-sys.path.insert(0, str(SRC_DIR))       # põe no topo do sys.path
+sys.path.insert(0, str(SRC_DIR))       
 os.environ["PYTHONPATH"] = (
     f"{SRC_DIR}{os.pathsep}{os.environ.get('PYTHONPATH', '')}"
 )
@@ -51,7 +51,8 @@ rule fetch_cds:
     shell: "python src/01_fetch_cds.py {wildcards.gene} {output}"
 
 #######################################################
-# 2 - Translate CDS to protein sequences
+# 2 - Translate CDS to protein sequences and filter
+#     to keep only valid CDS (good quality)
 #######################################################
 rule translate_cds:
     input: "data/raw_cds/{gene}.fasta"
@@ -59,26 +60,37 @@ rule translate_cds:
     conda: "envs/dnds.yaml"
     shell: "python src/02_translate_cds.py {input} {output}       "
 
+rule filter_valid_cds: 
+    input:
+        cds = "data/raw_cds/{gene}.fasta",
+        prot = "data/raw_prot/{gene}.fasta"
+    output: "data/filtered_cds/{gene}.fasta"
+    conda: "envs/dnds.yaml"
+    shell: """
+    seqkit grep -f <(seqkit seq -n -i {input.prot}) {input.cds} -o {output}
+    """
 ######################################################
-# 3 - Align protein sequences (MAFFT)
+# 3 - Align protein sequences (PRANK)
 ######################################################
 rule align_protein: 
     input: "data/raw_prot/{gene}.fasta"
     output: "data/align_prot/{gene}.fasta"
-    threads: THREADS_MAFFT
     conda: "envs/dnds.yaml"
-    shell: """mafft --auto --thread {threads} {input} > {output}"""
+    shell: """
+    prank -d={input} -o={output} -protein -quiet
+    mv {output}.best.fas {output}
+    """
 
 ######################################################
-# 4 - Back-translate aligned protein sequences to CDS
+# 4 - Back-translate aligned protein sequences --> codons
 ######################################################
 rule pal2nal:
     input:
         protein = "data/align_prot/{gene}.fasta",
-        cds = "data/raw_cds/{gene}.fasta"
+        cds = "data/filtered_cds/{gene}.fasta"
     output: "data/align_codon/{gene}.fasta"
     conda: "envs/dnds.yaml"
-    shell: """pal2nal.pl {input.protein} {input.cds} -output fasta -nogap > {output}"""
+    shell: """pal2nal.pl {input.protein} {input.cds} -output fasta > {output}"""
 
 ######################################################
 # 5 - Maximum likelihood tree IQTREE
@@ -96,21 +108,8 @@ rule add_header_tree:
         tree  = "data/trees/{gene}.treefile"
     output: "data/trees_hdr/{gene}.tree"
     conda:  "envs/dnds.yaml"
-    run:
-        import os, re
-        from Bio import SeqIO
-
-        # Nº de táxons (= nº de sequências no alinhamento)
-        ntaxa = len(list(SeqIO.parse(input.fasta, "fasta")))
-
-        # Newick sem quebras/brancos
-        with open(input.tree) as ih:
-            newick = re.sub(r"\s+", "", ih.read().strip())
-
-        os.makedirs(os.path.dirname(output[0]), exist_ok=True)
-        with open(output[0], "w") as oh:
-            oh.write(f"{ntaxa} 1\n{newick}\n") 
-
+    shell: "python src/03_add_header_tree.py {input.fasta} {input.tree} {output}" 
+        
 ######################################################
 # 6 - Convert FASTA to PHYLIP
 ######################################################
@@ -118,7 +117,7 @@ rule fasta_to_phylip:
     input: "data/align_codon/{gene}.fasta"
     output: "data/align_codon_phylip/{gene}.phy"
     conda: "envs/dnds.yaml"
-    shell: """python src/03_fasta_to_phylip.py {input} {output}"""
+    shell: """python src/04_fasta_to_phylip.py {input} {output}"""
 
 #######################################################
 # 7 - PAML (Nssites = 0,1,2,7,8) for every gene 
@@ -173,4 +172,4 @@ rule analyze_paml_results:
         lrt = "results/paml/{gene}/lrt.tsv",
         beb = "results/paml/{gene}/beb.tsv"
     conda: "envs/dnds.yaml"
-    shell: "python src/04_analyze_paml_output.py {wildcards.gene} {output.lrt} {output.beb}"
+    shell: "python src/05_analyze_paml_output.py {wildcards.gene} {output.lrt} {output.beb}"

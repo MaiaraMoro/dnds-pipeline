@@ -26,7 +26,7 @@ def translate_fasta(input_path, output_path):
             print(f"Warning: Sequence contains 'N' for {record.id}.", file=sys.stderr)
         
         try: 
-            protein = seq.translate(to_stop=False)
+            protein = seq.translate(table=1, cds=True)
         
         except Exception as e:
             print(f"Error translating sequence {record.id}: {e}", file=sys.stderr)

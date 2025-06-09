@@ -15,6 +15,5 @@ with open(output_file, "w") as out:
     for record in alignment:
         # Ajustar ID (máx 50, espaçamento fixo com padding)
         id_fixed = record.id[:50].ljust(52)
-        seq = str(record.seq).replace("-", "N")
-        seq_no_wrap = ''.join(seq)
+        seq_no_wrap = ''.join(record.seq)
         out.write(f"{id_fixed}{seq_no_wrap}\n")

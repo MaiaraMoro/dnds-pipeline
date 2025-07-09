@@ -179,6 +179,15 @@ def save_as_fasta(gene_name, species_seq_dict, output_file):
 
     """
     with open(output_file, 'w', encoding='utf-8') as f:
+        if "homo_sapiens" in species_seq_dict:
+            seq, ensembl_id = species_seq_dict["homo_sapiens"]
+            header = f"{ensembl_id}|homo_sapiens"
+            f.write(f">{header}\n")
+            f.write(f"{seq}\n")
+            
+            # Remove a entrada humana do dicionário para não ser escrita novamente
+            del species_seq_dict["homo_sapiens"]
+            
         for species, (seq,ensembl_id) in species_seq_dict.items():
             header = f"{ensembl_id}|{species}"
             f.write(f">{header}\n")

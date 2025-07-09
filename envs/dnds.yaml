@@ -151,6 +151,7 @@ dependencies:
   - tomli=2.2.1=pyhd8ed1ab_1
   - traitlets=5.14.3=pyhd8ed1ab_1
   - typer=0.15.3=pyhf21524f_0
+  - seqkit
   - typer-slim=0.15.3=pyh29332c3_0
   - typer-slim-standard=0.15.3=h1a15894_0
   - typing-extensions=4.13.2=h0e9735f_0
@@ -167,5 +168,9 @@ dependencies:
   - zipp=3.21.0=pyhd8ed1ab_1
   - zstandard=0.23.0=py311h9ecbd09_2
   - zstd=1.5.7=hb8e6e7a_2
+  - macse=2.07
+  - hmmer=3.4
+  - prank=170427
+
   - pip:
       - scipy==1.15.3

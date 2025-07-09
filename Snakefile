@@ -92,11 +92,19 @@ rule pal2nal:
     conda: "envs/dnds.yaml"
     shell: """pal2nal.pl {input.protein} {input.cds} -output fasta > {output}"""
 
+rule reorder_codon_alignment:
+    input: "data/align_codon/{gene}.fasta"
+    output: "data/align_codon_reordered/{gene}.fasta"
+    conda: "envs/dnds.yaml"
+    shell: """
+    python src/03_reorder_codon_alignment.py {input} {output}
+    """
+
 ######################################################
 # 5 - Maximum likelihood tree IQTREE
 ######################################################
 rule build_tree:
-    input: "data/align_codon/{gene}.fasta"
+    input: "data/align_codon_reordered/{gene}.fasta"
     output: "data/trees/{gene}.treefile"
     threads: THREADS_TOTAL
     conda: "envs/dnds.yaml"
@@ -104,20 +112,20 @@ rule build_tree:
 
 rule add_header_tree:
     input:
-        fasta = "data/align_codon/{gene}.fasta",
+        fasta = "data/align_codon_reordered/{gene}.fasta",
         tree  = "data/trees/{gene}.treefile"
     output: "data/trees_hdr/{gene}.tree"
     conda:  "envs/dnds.yaml"
-    shell: "python src/03_add_header_tree.py {input.fasta} {input.tree} {output}" 
+    shell: "python src/04_add_header_tree.py {input.fasta} {input.tree} {output}" 
         
 ######################################################
 # 6 - Convert FASTA to PHYLIP
 ######################################################
 rule fasta_to_phylip:
-    input: "data/align_codon/{gene}.fasta"
+    input: "data/align_codon_reordered/{gene}.fasta"
     output: "data/align_codon_phylip/{gene}.phy"
     conda: "envs/dnds.yaml"
-    shell: """python src/04_fasta_to_phylip.py {input} {output}"""
+    shell: """python src/05_fasta_to_phylip.py {input} {output}"""
 
 #######################################################
 # 7 - PAML (Nssites = 0,1,2,7,8) for every gene 
@@ -172,4 +180,4 @@ rule analyze_paml_results:
         lrt = "results/paml/{gene}/lrt.tsv",
         beb = "results/paml/{gene}/beb.tsv"
     conda: "envs/dnds.yaml"
-    shell: "python src/05_analyze_paml_output.py {wildcards.gene} {output.lrt} {output.beb}"
+    shell: "python src/06_analyze_paml_output.py {wildcards.gene} {output.lrt} {output.beb}"

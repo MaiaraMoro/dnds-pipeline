@@ -1,5 +1,5 @@
 threads_mafft: 4    
 threads_total: 1
-genes_file:   "data/genes/genes.tsv"
+genes_file:   "data/genes/divergentes_e_interferon.tsv"
 species_file: "data/species/mammals.txt"
 omega_cutoff: 0.6
